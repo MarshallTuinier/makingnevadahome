@@ -52,7 +52,7 @@ const southwest = () => {
           Among the builders in Southern Highlands are Lennar, Pulte Homes, William Lyon, and Woodside Homes. Estate lots are available in Augusta Canyon and Olympia Ridge.
           <br/>
           <br/>
-          <b>Rhodes Ranch</b> offers new construction homes and resalesas well as a variety of condos and townhomes. Whether you’re looking for a starter home or a sprawling, 
+          <b>Rhodes Ranch</b> offers new construction homes and resalesas well as a variety of condos and townhomes. Whether you’re looking for a starter home or a sprawling,
           multimillion-dollar luxury estate, you’ll find it here. Real estate options in Rhodes Ranch have been developed with residents’ convenience and well-being in mind.
           The community is just 20 minutes or so from Downtown Las Vegas and residents enjoy access to a championship golf course, a state-of-the-art recreation center, and resort-style pools.
         </p>
@@ -65,14 +65,9 @@ const southwest = () => {
 
 
 const StyledPage = styled.div`
-  margin: 35px;
-  margin-left: 10vw;
-  max-width: 800px;
-
-  @media(max-width: 600px) {
-    margin: 0 auto;
-    margin-left: 10px;
-  }
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
 `
 
 export default southwest

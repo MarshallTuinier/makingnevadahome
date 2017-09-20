@@ -27,7 +27,7 @@ const bouldercity = () => {
           Carefully planned as a model community, the city’s design is no less than one of the best in the area, combining great amenities with fun and exciting attractions.
           <br/>
           <br/>
-          Its residents enjoy an abundance of public space, large amounts of landscaping and the traditional square grid of its layout that makes the city very walkable. 
+          Its residents enjoy an abundance of public space, large amounts of landscaping and the traditional square grid of its layout that makes the city very walkable.
           At the city’s heart is the wonderful Bicentennial Park a great place to meet and make friends where families can enjoy having nice picnics.
           <br/>
           <br/>
@@ -41,14 +41,9 @@ const bouldercity = () => {
 
 
 const StyledPage = styled.div`
-  margin: 35px;
-  margin-left: 10vw;
-  max-width: 800px;
-
-  @media(max-width: 600px) {
-    margin: 0 auto;
-    margin-left: 10px;
-  }
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
 `
 
 export default bouldercity

@@ -40,7 +40,7 @@ const lasvegas = () => {
           <br/>
           And this is what makes life in Las Vegas truly outstanding. With such a heavy flow of people coming in and out the city, its locals
           get to enjoy a steady stream of business. It makes for a thriving business climate made all the more robust by the friendly state tax laws
-          for both business and personal income. Las Vegas is just no entertainment hotspot in the desert. It can be the best home under the clear Nevada sky. 
+          for both business and personal income. Las Vegas is just no entertainment hotspot in the desert. It can be the best home under the clear Nevada sky.
         </p>
         <HR />
       </StyledPage>
@@ -51,14 +51,9 @@ const lasvegas = () => {
 
 
 const StyledPage = styled.div`
-  margin: 35px;
-  margin-left: 10vw;
-  max-width: 800px;
-
-  @media(max-width: 600px) {
-    margin: 0 auto;
-    margin-left: 10px;
-  }
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
 `
 
 export default lasvegas

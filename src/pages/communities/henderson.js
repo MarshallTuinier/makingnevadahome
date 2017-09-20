@@ -56,14 +56,9 @@ const henderson = () => {
 
 
 const StyledPage = styled.div`
-  margin: 35px;
-  margin-left: 10vw;
-  max-width: 800px;
-
-  @media(max-width: 600px) {
-    margin: 0 auto;
-    margin-left: 10px;
-  }
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
 `
 
 export default henderson

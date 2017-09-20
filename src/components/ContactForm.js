@@ -5,8 +5,11 @@ import styled from 'styled-components'
 export default class Contact extends Component {
   render() {
     return (
-      <div>
-        <h1>Contact</h1>
+      <StyledForm>
+        <h1>Contact Us!</h1>
+        <p>If you're interested in any of our properties or just would like to talk, feel free to call us or submit a request
+           below and we will be in touch shortly.
+        </p>
         <form
           name="contact"
           method="post"
@@ -14,7 +17,7 @@ export default class Contact extends Component {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="Contact" />
           <p hidden>
             <label>
               Don’t fill this out: <input name="bot-field" />
@@ -22,13 +25,19 @@ export default class Contact extends Component {
           </p>
           <p>
             <label>
-              Your name:<br />
+              Your Name:<br />
               <input type="text" name="name" />
             </label>
           </p>
           <p>
             <label>
-              Your email:<br />
+              Your Email:<br />
+              <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Phone Number:<br />
               <input type="email" name="email" />
             </label>
           </p>
@@ -39,10 +48,24 @@ export default class Contact extends Component {
             </label>
           </p>
           <p>
-            <button type="submit">Send</button>
+            <button type="submit">Submit</button>
           </p>
         </form>
-      </div>
+      </StyledForm>
     );
   }
 }
+
+const StyledForm = styled.div`
+  padding: 50px 20px;
+  margin: 0 auto;
+
+  input {
+    width: 600px;
+  }
+
+  textarea {
+    width: 600px;
+    height: 300px;
+  }
+`
