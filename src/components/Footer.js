@@ -43,7 +43,7 @@ const StyledFooter = styled.div`
   .footer-container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 50px 20px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     p {
