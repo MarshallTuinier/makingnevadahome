@@ -11,7 +11,7 @@ export default class Contact extends Component {
            below and we will be in touch shortly.
         </p>
         <form
-          name="contact"
+          name="Contact"
           method="post"
           action="/ContactThankYou/"
           data-netlify="true"
@@ -67,5 +67,14 @@ const StyledForm = styled.div`
   textarea {
     width: 600px;
     height: 300px;
+  }
+
+  @media(max-width: 600px) {
+    input {
+      width: 100%;
+    }
+    textarea {
+      width: 100%;
+    }
   }
 `
