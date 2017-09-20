@@ -31,6 +31,7 @@ const henderson = () => {
           Henderson is well known for its numerous gated communities. No less than 27 master planned communities can be found in the city. Among them are:
           <br/>
           <br/>
+        </p>
           <ul>
             <li>Inspirada</li>
             <li>Seven Hills</li>
@@ -38,6 +39,7 @@ const henderson = () => {
             <li>Cadence</li>
             <li>Tuscany Village</li>
           </ul>
+        <p>
           All of this is testament to the attractiveness of the city as a place to live. With so many communities, the housing options in Henderson are just as numerous and varied.
           Tremendous development is an ongoing activity in Henderson as to keep up with the demand for homes in the city. As such, the real estate options in Henderson encompass every size and every price range.
           Buyers can choose from single family homes perfect for starter families, sprawling luxury homes on sweeping landscaped lots, to gorgeous homes in master planned neighborhoods.
