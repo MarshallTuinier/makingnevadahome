@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-
+import React, { Component } from "react";
+import styled from "styled-components";
 
 export default class Contact extends Component {
   render() {
     return (
       <StyledForm>
         <h1>Contact Us!</h1>
-        <p>If you're interested in any of our properties or just would like to talk, feel free to call us or submit a request
-           below and we will be in touch shortly.
+        <p>
+          If you're interested in any of our properties or just would like to
+          talk, feel free to call us or submit a request below and we will be in
+          touch shortly.
         </p>
         <form
           name="Contact"
@@ -69,7 +70,7 @@ const StyledForm = styled.div`
     height: 300px;
   }
 
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     input {
       width: 100%;
     }
@@ -77,4 +78,4 @@ const StyledForm = styled.div`
       width: 100%;
     }
   }
-`
+`;

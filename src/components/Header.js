@@ -1,54 +1,49 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import Link from 'gatsby-link'
-import ContactCard from '../components/ContactCard'
-import ContactBlock from '../components/ContactBlock'
-import { Icon } from 'react-fa'
+import React, { Component } from "react";
+import styled from "styled-components";
+import Link from "gatsby-link";
+import ContactCard from "../components/ContactCard";
+import ContactBlock from "../components/ContactBlock";
+import { Icon } from "react-fa";
 
 class Header extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.state = {
       navOpen: false
-    }
+    };
   }
 
   handleHamburger = () => {
-    this.setState({ navOpen: !this.state.navOpen })
-  }
+    this.setState({ navOpen: !this.state.navOpen });
+  };
 
   handleHomeClick = () => {
     if (!!this.state.navOpen) {
-      this.setState({ navOpen: false })
+      this.setState({ navOpen: false });
     }
-  }
+  };
 
-  render(){
+  render() {
     return (
       <NavBar>
-      <StyledHeader open={this.state.navOpen} >
-        <div className="header-container">
-          <div className = "contact-buttons">
+        <StyledHeader open={this.state.navOpen}>
+          <div className="header-container">
+            <div className="contact-buttons">
               <ContactBlock className="bars" onClick={this.handleHamburger}>
                 <Icon name="bars" />
               </ContactBlock>
-            <ContactBlock linkTo="tel:7026724396">
-              <Icon name="phone" />
-            </ContactBlock>
-            <ContactBlock linkTo="mailto: info@makingnevadahome.com">
-              <Icon name="envelope" />
-            </ContactBlock>
-
-          </div>
+              <ContactBlock linkTo="tel:7026724396">
+                <Icon name="phone" />
+              </ContactBlock>
+              <ContactBlock linkTo="mailto: info@makingnevadahome.com">
+                <Icon name="envelope" />
+              </ContactBlock>
+            </div>
 
             <div className="header-content">
               <h1>
-                <Link
-                  className='link'
-                  to="/"
-                >
-                  <span onClick={this.handleHomeClick}
-                  >
+                <Link className="link" to="/">
+                  <span onClick={this.handleHomeClick}>
                     <span className="blue">making</span>NEVADA<span className="blue">home</span>
                   </span>
                 </Link>
@@ -58,28 +53,45 @@ class Header extends Component {
               </p>
             </div>
             <NavRight>
-              <div className='contact-wrapper'>
+              <div className="contact-wrapper">
                 <ContactCard>
                   <h5>Jason Brown</h5>
-                  <Icon name="phone" /><span className="tel-number">555-555-5555</span>
+                  <Icon name="phone" />
+                  <span className="tel-number">555-555-5555</span>
                 </ContactCard>
                 <ContactCard>
                   <h5>David Hofer</h5>
-                  <Icon name="phone" /><span className="tel-number">555-555-5555</span>
+                  <Icon name="phone" />
+                  <span className="tel-number">555-555-5555</span>
                 </ContactCard>
               </div>
               <StyledNavContainer open={this.state.navOpen}>
-                <Link to="/About"><div className='nav-item' onClick={this.handleHamburger}>About</div></Link>
-                <Link to="/OurProperties"><div className='nav-item' onClick={this.handleHamburger}>Our Properties</div></Link>
-                <Link to="/Search"><div className='nav-item' onClick={this.handleHamburger}>Home Search</div></Link>
-                <Link to="/Contact"><div className='nav-item' onClick={this.handleHamburger}>Contact</div></Link>
+                <Link to="/About">
+                  <div className="nav-item" onClick={this.handleHamburger}>
+                    About
+                  </div>
+                </Link>
+                <Link to="/OurProperties">
+                  <div className="nav-item" onClick={this.handleHamburger}>
+                    Our Properties
+                  </div>
+                </Link>
+                <Link to="/Search">
+                  <div className="nav-item" onClick={this.handleHamburger}>
+                    Home Search
+                  </div>
+                </Link>
+                <Link to="/Contact">
+                  <div className="nav-item" onClick={this.handleHamburger}>
+                    Contact
+                  </div>
+                </Link>
               </StyledNavContainer>
             </NavRight>
-
-        </div>
-      </StyledHeader>
-    </NavBar>
-    )
+          </div>
+        </StyledHeader>
+      </NavBar>
+    );
   }
 }
 
@@ -87,14 +99,14 @@ class Header extends Component {
 
 const NavBar = styled.nav`
   width: 100%;
-  background: #20ACE1;
+  background: #20ace1;
   text-shadow: 1px 1px 2px black;
   .blue {
     color: #003153;
   }
-`
+`;
 const StyledHeader = styled.div`
-  background: #20ACE1;
+  background: #20ace1;
   color: #003153;
   max-width: 1200px;
   margin: 0 auto;
@@ -103,18 +115,15 @@ const StyledHeader = styled.div`
     display: none;
   }
 
-
   h1 {
-
     font-weight: normal;
     margin-top: 1rem;
     margin-bottom: 2px;
-    a{
+    a {
       &:hover {
         transform: translateY(0);
       }
     }
-
   }
 
   .contact-wrapper {
@@ -136,10 +145,8 @@ const StyledHeader = styled.div`
     max-width: 660px;
     margin-left: 20px;
     margin-bottom: 1rem;
-    background-color: #20ACE1;
-
+    background-color: #20ace1;
   }
-
 
   .header-container {
     display: flex;
@@ -150,7 +157,6 @@ const StyledHeader = styled.div`
     margin: 0 auto;
   }
 
-
   p {
     color: white;
     margin: 0 auto;
@@ -160,8 +166,8 @@ const StyledHeader = styled.div`
   a {
     text-decoration: none !important;
     color: white;
-    transition: transform .25s;
-    &:hover{
+    transition: transform 0.25s;
+    &:hover {
       transform: translateY(-2px);
     }
   }
@@ -178,7 +184,7 @@ const StyledHeader = styled.div`
       display: flex;
       justify-content: space-between;
       .bars {
-        display: none
+        display: none;
       }
     }
     .contact-wrapper {
@@ -204,7 +210,7 @@ const StyledHeader = styled.div`
     h1 {
       margin-bottom: 15px;
     }
-    transition: height .2s ease;
+    transition: height 0.2s ease;
     .contact-buttons {
       justify-content: space-between;
       width: 100%;
@@ -216,18 +222,14 @@ const StyledHeader = styled.div`
       }
     }
 
-
     .header-content {
       h1 {
         font-size: 8vw;
         margin-top: 20px;
-
       }
     }
-
-
   }
-`
+`;
 const StyledNavContainer = styled.div`
   position: relative;
   display: flex;
@@ -246,9 +248,9 @@ const StyledNavContainer = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    display: ${props => props.open ? 'block' : 'none'};
-    opacity: ${props => props.open ? '1' : '0'};
-    transition: all .2s ease-out;
+    display: ${props => (props.open ? "block" : "none")};
+    opacity: ${props => (props.open ? "1" : "0")};
+    transition: all 0.2s ease-out;
     margin: 2px auto;
     p {
       width: 99%;
@@ -269,13 +271,10 @@ const StyledNavContainer = styled.div`
       margin-left: 0;
     }
   }
+`;
 
-`
-
-const NavRight = styled.div`
-
-`
+const NavRight = styled.div``;
 
 //---------End Styles--------------
 
-export default Header
+export default Header;

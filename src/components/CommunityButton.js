@@ -1,16 +1,24 @@
-import React from 'react'
-import styled from 'styled-components'
-import Link from 'gatsby-link'
+import React from "react";
+import styled from "styled-components";
+import Link from "gatsby-link";
 
 const CommunityButton = ({ children }) => {
-  return(
-    <Link to={"/communities/" + children.split(' ').join('').toLowerCase()}>
+  return (
+    <Link
+      to={
+        "/communities/" +
+        children
+          .split(" ")
+          .join("")
+          .toLowerCase()
+      }
+    >
       <StyledButton>
         <h3>{children}</h3>
       </StyledButton>
     </Link>
-  )
-}
+  );
+};
 
 const StyledButton = styled.div`
   width: 210px;
@@ -22,12 +30,12 @@ const StyledButton = styled.div`
   margin: 10px 0;
   border: 1px solid #003153;
   outline: 3px solid white;
-  transition: background-color .3s, color .3s, border .3s;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
   &:hover {
     cursor: pointer;
     outline: none;
     border: 1px solid white;
-    background-color: #20ACE1;
+    background-color: #20ace1;
 
     h3 {
       color: white;
@@ -40,9 +48,7 @@ const StyledButton = styled.div`
     color: #003153;
   }
 
-
-  @media(max-width: 900px) {
-
+  @media (max-width: 900px) {
     width: 100%;
     margin: 0 auto;
     border: none;
@@ -55,7 +61,6 @@ const StyledButton = styled.div`
       border: none;
     }
   }
-`
+`;
 
-
-export default CommunityButton
+export default CommunityButton;

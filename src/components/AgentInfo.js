@@ -1,28 +1,35 @@
-import React from 'react'
-import styled from 'styled-components'
-import DavidHofer from '../assets/DavidHofer.png'
-import JasonBrown from '../assets/JasonBrown.png'
+import React from "react";
+import styled from "styled-components";
+import DavidHofer from "../assets/DavidHofer.png";
+import JasonBrown from "../assets/JasonBrown.png";
 
 const AgentInfo = () => {
-  return(
+  return (
     <StyledContainer>
       <div className="agent-bar">
-          <img className="agent-photo jason" src={JasonBrown} />
-          <div className="description">
-            <h2>Las Vegas Valley Real Estate</h2>
-            <p>
-              We're proud to call ourselves a boutique real estate company. As such, we guarantee exceptional and personalized service.
-              We understand that your decision to buy or sell a home comes after a long process of analyzing, reflecting, dreaming and number-crunching.
-               We will not take your journey lightly. We will always be on hand to lend you the support you need in any stage--whether in home viewing, staging an open house,
-               looking for the right mortgage or closing the deal. As a boutique real estate company, we have the independence to explore all the available tools to successfully
-               market your property or help you find your dream home. We won't hesitate to tailor our services to better suit your unique situation.
-            </p>
-          </div>
-          <img className="agent-photo david" src={DavidHofer} />
+        <img className="agent-photo jason" src={JasonBrown} />
+        <div className="description">
+          <h2>Las Vegas Valley Real Estate</h2>
+          <p>
+            We're proud to call ourselves a boutique real estate company. As
+            such, we guarantee exceptional and personalized service. We
+            understand that your decision to buy or sell a home comes after a
+            long process of analyzing, reflecting, dreaming and
+            number-crunching. We will not take your journey lightly. We will
+            always be on hand to lend you the support you need in any
+            stage--whether in home viewing, staging an open house, looking for
+            the right mortgage or closing the deal. As a boutique real estate
+            company, we have the independence to explore all the available tools
+            to successfully market your property or help you find your dream
+            home. We won't hesitate to tailor our services to better suit your
+            unique situation.
+          </p>
+        </div>
+        <img className="agent-photo david" src={DavidHofer} />
       </div>
     </StyledContainer>
-  )
-}
+  );
+};
 
 const StyledContainer = styled.div`
   width: 100%;
@@ -33,7 +40,7 @@ const StyledContainer = styled.div`
   text-align: center;
   position: relative;
   text-shadow: 1px 1px 2px black;
-  
+
   .agent-photo {
     display: inline-block;
     position: absolute;
@@ -67,7 +74,7 @@ const StyledContainer = styled.div`
   h2 {
     font-size: 40px;
   }
-  @media(max-width: 1700px) {
+  @media (max-width: 1700px) {
     .jason {
       left: 0;
     }
@@ -75,7 +82,7 @@ const StyledContainer = styled.div`
       right: 0;
     }
   }
-  @media(max-width: 1500px) {
+  @media (max-width: 1500px) {
     .jason {
       height: 298px;
       width: 305px;
@@ -90,7 +97,7 @@ const StyledContainer = styled.div`
       width: 550px;
     }
   }
-  @media(max-width: 1000px) {
+  @media (max-width: 1000px) {
     h2 {
       font-size: 25px;
     }
@@ -101,7 +108,7 @@ const StyledContainer = styled.div`
       display: none;
     }
   }
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     height: auto;
     .agent-bar {
       background-color: white;
@@ -117,6 +124,5 @@ const StyledContainer = styled.div`
       font-size: 25px;
     }
   }
-
-`
-export default AgentInfo
+`;
+export default AgentInfo;

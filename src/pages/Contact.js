@@ -1,21 +1,21 @@
-import React from 'react'
-import UnderNavImg from '../components/UnderNavImg'
-import ContactForm from '../components/ContactForm'
-import styled from 'styled-components'
+import React from "react";
+import UnderNavImg from "../components/UnderNavImg";
+import ContactForm from "../components/ContactForm";
+import styled from "styled-components";
 
 const Contact = () => {
-  return(
+  return (
     <div>
       <UnderNavImg />
-      <StyledPage>        
+      <StyledPage>
         <ContactForm />
       </StyledPage>
     </div>
-  )
-}
+  );
+};
 
 const StyledPage = styled.div`
   max-width: 1200px;
   margin: 0 auto;
-`
-export default Contact
+`;
+export default Contact;

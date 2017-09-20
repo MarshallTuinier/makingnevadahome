@@ -1,16 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-
-const ContactBlock = (props) => {
-  return(
+const ContactBlock = props => {
+  return (
     <Contact className={props.className} onClick={props.onClick}>
-      <a href={props.linkTo}>
-        {props.children}
-      </a>
+      <a href={props.linkTo}>{props.children}</a>
     </Contact>
-  )
-}
+  );
+};
 
 const Contact = styled.div`
   text-align: center;
@@ -28,9 +25,9 @@ const Contact = styled.div`
     color: white !important;
     font-family: sans-serif;
   }
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     width: 33%;
   }
-`
+`;
 
-export default ContactBlock
+export default ContactBlock;

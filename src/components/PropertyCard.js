@@ -1,31 +1,38 @@
-import React from 'react'
-import styled from 'styled-components'
-import numberWithCommas from '../utils/numberWithCommas'
-import { navigateTo } from 'gatsby-link'
+import React from "react";
+import styled from "styled-components";
+import numberWithCommas from "../utils/numberWithCommas";
+import { navigateTo } from "gatsby-link";
 
 const PropertyCard = props => {
+  const handleClick = mlsId => {
+    navigateTo(`/property?id=${mlsId}`);
+  };
 
-  const handleClick = (mlsId) => {
-    navigateTo(`/property?id=${mlsId}`)
-  }
+  const { address, mlsId, listPrice, property } = props.data;
+  const baths = property.bathsFull + property.bathsHalf / 2;
+  const price = numberWithCommas(listPrice);
 
-  const { address, mlsId, listPrice, property } = props.data
-  const baths = (property.bathsFull + (property.bathsHalf / 2))
-  const price = numberWithCommas(listPrice)
+  return (
+    <Card propertyData={props.data} onClick={() => handleClick(mlsId)}>
+      <div className="home-info">
+        <h4>
+          {address.streetNumber} {address.streetName}
+        </h4>
+        <h4>
+          {address.city}, {address.state}
+        </h4>
+        <p>
+          {property.bedrooms} bed, {baths} bath
+        </p>
+      </div>
+      <div className="price">
+        <p>${price}</p>
+      </div>
+    </Card>
+  );
+};
 
-    return(
-        <Card propertyData={props.data} onClick={() => handleClick(mlsId)}>
-          <div className='home-info'>
-            <h4>{address.streetNumber} {address.streetName}</h4>
-            <h4>{address.city}, {address.state}</h4>
-            <p>{property.bedrooms} bed, {baths} bath</p>
-          </div>
-          <div className='price'><p>${price}</p></div>
-        </Card>
-    )
-}
-
-export default PropertyCard
+export default PropertyCard;
 
 const Card = styled.div`
   position: relative;
@@ -44,13 +51,13 @@ const Card = styled.div`
     margin-bottom: 5px;
   }
   .price {
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 10%;
     padding-top: 6px;
-    transition: all .5s;
+    transition: all 0.5s;
   }
   .home-info {
     position: absolute;
@@ -58,12 +65,12 @@ const Card = styled.div`
     width: 100%;
     height: auto;
     z-index: 2;
-    transition: all .5s;
+    transition: all 0.5s;
     h4 {
-      transition: all .5s;
+      transition: all 0.5s;
     }
   }
-  &:hover{
+  &:hover {
     cursor: pointer;
     .price {
       height: 100%;
@@ -78,8 +85,8 @@ const Card = styled.div`
       }
     }
   }
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     width: 95vw;
     height: 95vw;
   }
-`
+`;
