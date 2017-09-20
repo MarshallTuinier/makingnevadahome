@@ -38,7 +38,7 @@ export default class Contact extends Component {
           <p>
             <label>
               Your Phone Number:<br />
-              <input type="number" name="email" />
+              <input type="text" name="email" />
             </label>
           </p>
           <p>

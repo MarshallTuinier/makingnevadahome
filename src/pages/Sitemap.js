@@ -23,7 +23,7 @@ const Sitemap = () => (
           <li><p><Link to='/Communities/NorthLasVegas' >North Las Vegas Real Estate</Link></p></li>
           <li><p><Link to='/Communities/NorthWest' >Northwest Las Vegas Real Estate</Link></p></li>
         </ul>
-        <li><p><Link to='' >Contact</Link></p></li>
+        <li><p><Link to='/Contact' >Contact</Link></p></li>
       </ul>
     </StyledPage>
   </div>
