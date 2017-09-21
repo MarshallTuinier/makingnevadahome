@@ -86,8 +86,8 @@ const Card = styled.div`
     }
   }
   @media (max-width: 600px) {
-    width: 65vw;
-    height: 65vw;
+    width: 50vw;
+    height: 50vw;
     .price {
       height: 15%;
     }
