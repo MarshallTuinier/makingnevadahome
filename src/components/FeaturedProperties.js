@@ -31,6 +31,7 @@ class FeaturedProperties extends Component {
       autoplay: true,
       autoplaySpeed: 5000,
       infinite: true,
+      swipeToSlide: true,
       responsive: [
         { breakpoint: 930, settings: { slidesToShow: 1 } },
         { breakpoint: 1450, settings: { slidesToShow: 2, centerMode: false } },
@@ -74,6 +75,7 @@ const StyledContainer = styled.div`
 const PropertiesContainer = styled.div`
   height: 100%;
   width: 90%;
+  padding: 20px;
   margin: 0 auto;
   display: flex;
   * {
