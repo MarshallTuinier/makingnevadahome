@@ -39,7 +39,7 @@ export default class Contact extends Component {
           <p>
             <label>
               Your Phone Number:<br />
-              <input type="text" name="email" />
+              <input type="text" name="phone" />
             </label>
           </p>
           <p>
@@ -63,11 +63,19 @@ const StyledForm = styled.div`
 
   input {
     width: 600px;
+    border-radius: 7px;
+    border-style: ridge;
   }
 
   textarea {
     width: 600px;
     height: 300px;
+    border-radius: 7px;
+  }
+  textarea:focus,
+  input:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 1.5px #20ace1;
   }
 
   @media (max-width: 600px) {
