@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import HR from "../../components/HR";
-import UnderNavImg from "../../components/UnderNavImg";
+import React from 'react';
+import styled from 'styled-components';
+import HR from '../../components/HR';
+import UnderNavImg from '../../components/UnderNavImg';
 
 const summerlin = () => {
   return (

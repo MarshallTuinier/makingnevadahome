@@ -1,7 +1,7 @@
-import React from "react";
-import UnderNavImg from "../components/UnderNavImg";
-import ContactForm from "../components/ContactForm";
-import styled from "styled-components";
+import React from 'react';
+import UnderNavImg from '../components/UnderNavImg';
+import ContactForm from '../components/ContactForm';
+import styled from 'styled-components';
 
 const Contact = () => {
   return (

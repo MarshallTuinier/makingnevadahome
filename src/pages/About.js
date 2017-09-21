@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import JBAbout from "../assets/JBAbout.png";
-import DHAbout from "../assets/DHAbout.png";
-import UnderNavImg from "../components/UnderNavImg";
-import HR from "../components/HR";
+import React from 'react';
+import styled from 'styled-components';
+import JBAbout from '../assets/JBAbout.png';
+import DHAbout from '../assets/DHAbout.png';
+import UnderNavImg from '../components/UnderNavImg';
+import HR from '../components/HR';
 const About = props => {
   return (
     <div className={props.className}>

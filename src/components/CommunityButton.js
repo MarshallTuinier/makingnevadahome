@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import Link from "gatsby-link";
+import React from 'react';
+import styled from 'styled-components';
+import Link from 'gatsby-link';
 
 const CommunityButton = ({ children }) => {
   return (
     <Link
       to={
-        "/communities/" +
+        '/communities/' +
         children
-          .split(" ")
-          .join("")
+          .split(' ')
+          .join('')
           .toLowerCase()
       }
     >

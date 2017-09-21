@@ -1,5 +1,5 @@
-import React from "react";
-import UnderNavImg from "../components/UnderNavImg";
+import React from 'react';
+import UnderNavImg from '../components/UnderNavImg';
 
 const Search = () => {
   return (

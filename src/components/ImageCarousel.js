@@ -1,12 +1,12 @@
-import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import sliderImg1 from "../assets/sliderImg1.jpg";
-import sliderImg2 from "../assets/sliderImg2.jpg";
-import sliderImg3 from "../assets/sliderImg3.jpg";
-import sliderImg4 from "../assets/sliderImg4.jpg";
-import sliderImg5 from "../assets/sliderImg5.jpg";
-import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
-import styled from "styled-components";
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import sliderImg1 from '../assets/sliderImg1.jpg';
+import sliderImg2 from '../assets/sliderImg2.jpg';
+import sliderImg3 from '../assets/sliderImg3.jpg';
+import sliderImg4 from '../assets/sliderImg4.jpg';
+import sliderImg5 from '../assets/sliderImg5.jpg';
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import styled from 'styled-components';
 
 const ImageCarousel = () => (
   <StyledContainer>

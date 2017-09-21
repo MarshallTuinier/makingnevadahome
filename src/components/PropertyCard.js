@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import numberWithCommas from "../utils/numberWithCommas";
-import { navigateTo } from "gatsby-link";
+import React from 'react';
+import styled from 'styled-components';
+import numberWithCommas from '../utils/numberWithCommas';
+import { navigateTo } from 'gatsby-link';
 
 const PropertyCard = props => {
   const handleClick = mlsId => {

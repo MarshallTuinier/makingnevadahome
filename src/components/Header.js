@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import Link from "gatsby-link";
-import ContactCard from "../components/ContactCard";
-import ContactBlock from "../components/ContactBlock";
-import { Icon } from "react-fa";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import Link from 'gatsby-link';
+import ContactCard from '../components/ContactCard';
+import ContactBlock from '../components/ContactBlock';
+import { Icon } from 'react-fa';
 
 class Header extends Component {
   constructor(props) {
@@ -248,8 +248,8 @@ const StyledNavContainer = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    display: ${props => (props.open ? "block" : "none")};
-    opacity: ${props => (props.open ? "1" : "0")};
+    display: ${props => (props.open ? 'block' : 'none')};
+    opacity: ${props => (props.open ? '1' : '0')};
     transition: all 0.2s ease-out;
     margin: 2px auto;
     p {

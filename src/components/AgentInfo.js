@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import DavidHofer from "../assets/DavidHofer.png";
-import JasonBrown from "../assets/JasonBrown.png";
+import React from 'react';
+import styled from 'styled-components';
+import DavidHofer from '../assets/DavidHofer.png';
+import JasonBrown from '../assets/JasonBrown.png';
 
 const AgentInfo = () => {
   return (

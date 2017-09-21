@@ -1,24 +1,24 @@
-import React from "react";
-import Helmet from "react-helmet";
-import styled from "styled-components";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import "typeface-varela-round";
-import "typeface-open-sans";
-import "./index.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import Helmet from 'react-helmet';
+import styled from 'styled-components';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import 'typeface-varela-round';
+import 'typeface-open-sans';
+import './index.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="Making Nevada Home"
       meta={[
-        { name: "description", content: "Sample" },
+        { name: 'description', content: 'Sample' },
         {
-          name: "keywords",
+          name: 'keywords',
           content:
-            "Making Nevada Home, Las Vegas, Vegas, Henderson, Southern Neava, Real Estate, Home, Home Buying, Real, Estate"
+            'Making Nevada Home, Las Vegas, Vegas, Henderson, Southern Neava, Real Estate, Home, Home Buying, Real, Estate'
         }
       ]}
     />

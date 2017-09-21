@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "gatsby-link";
-import styled from "styled-components";
-import realtorlogos from "../assets/realtorlogos.png";
+import React from 'react';
+import Link from 'gatsby-link';
+import styled from 'styled-components';
+import realtorlogos from '../assets/realtorlogos.png';
 
 const Footer = () => {
   return (

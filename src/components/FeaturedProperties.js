@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { fetchAllProperties } from "../utils/api";
-import PropertyCard from "./PropertyCard";
-import Slider from "react-slick";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { fetchAllProperties } from '../utils/api';
+import PropertyCard from './PropertyCard';
+import Slider from 'react-slick';
 
 class FeaturedProperties extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class FeaturedProperties extends Component {
 
   componentDidMount() {
     fetchAllProperties().then(data => {
-      if (data !== "error") {
+      if (data !== 'error') {
         this.setState({ data, loading: false });
       } else {
         this.setState({ error: true });

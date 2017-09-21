@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import UnderNavImg from "../components/UnderNavImg";
-import { fetchSingleProperty } from "../utils/api";
-import queryString from "query-string";
-import numberWithCommas from "../utils/numberWithCommas";
-import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import Helmet from "react-helmet";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import UnderNavImg from '../components/UnderNavImg';
+import { fetchSingleProperty } from '../utils/api';
+import queryString from 'query-string';
+import numberWithCommas from '../utils/numberWithCommas';
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+import Helmet from 'react-helmet';
+import styled from 'styled-components';
 
 class Property extends Component {
   constructor(props) {
@@ -56,7 +56,7 @@ class Property extends Component {
       console.log(this.state.data);
       return (
         <StyledContainer>
-          <Helmet title={address.streetNumber + " " + address.streetName} />
+          <Helmet title={address.streetNumber + ' ' + address.streetName} />
           <UnderNavImg />
           <StyledPage>
             <MainInfo>
@@ -83,9 +83,9 @@ class Property extends Component {
                   src={photo}
                   key={index}
                   alt={
-                    "Photo for " +
+                    'Photo for ' +
                     address.streetNumber +
-                    " " +
+                    ' ' +
                     address.streetName
                   }
                 />
@@ -114,7 +114,7 @@ class Property extends Component {
               </FeatureNoBorder>
               <FeatureNoBorder>
                 <p>
-                  <span className="bold">Cross Streets:</span>{" "}
+                  <span className="bold">Cross Streets:</span>{' '}
                   {address.crossStreet}
                 </p>
               </FeatureNoBorder>
@@ -128,7 +128,7 @@ class Property extends Component {
               </Feature>
               <Feature>
                 <p>
-                  <span className="bold">Rooms:</span>{" "}
+                  <span className="bold">Rooms:</span>{' '}
                   {property.additionalRooms}
                 </p>
               </Feature>
@@ -148,22 +148,22 @@ class Property extends Component {
             <FeatureContainer>
               <Feature>
                 <p>
-                  <span className="bold">Has Fireplace:</span>{" "}
-                  {!!property.fireplaces ? "Yes" : "No"}
+                  <span className="bold">Has Fireplace:</span>{' '}
+                  {!!property.fireplaces ? 'Yes' : 'No'}
                 </p>
               </Feature>
               <Feature>
                 <p>
-                  <span className="bold">Heating:</span>{" "}
-                  {!!property.heating ? property.heating : "None"}
+                  <span className="bold">Heating:</span>{' '}
+                  {!!property.heating ? property.heating : 'None'}
                 </p>
               </Feature>
             </FeatureContainer>
             <FeatureContainer>
               <Feature>
                 <p>
-                  <span className="bold">Cooling:</span>{" "}
-                  {!!property.cooling ? property.cooling : "None"}
+                  <span className="bold">Cooling:</span>{' '}
+                  {!!property.cooling ? property.cooling : 'None'}
                 </p>
               </Feature>
               <Feature>
@@ -175,7 +175,7 @@ class Property extends Component {
             <FeatureContainer>
               <Feature>
                 <p>
-                  <span className="bold">Laundry:</span>{" "}
+                  <span className="bold">Laundry:</span>{' '}
                   {property.laundryFeatures}
                 </p>
               </Feature>
@@ -188,7 +188,7 @@ class Property extends Component {
             <FeatureContainer>
               <FeatureNoBorder>
                 <p>
-                  <span className="bold">Additional Features:</span>{" "}
+                  <span className="bold">Additional Features:</span>{' '}
                   {property.interiorFeatures}
                 </p>
               </FeatureNoBorder>
@@ -209,7 +209,7 @@ class Property extends Component {
             <FeatureContainer>
               <Feature>
                 <p>
-                  <span className="bold">Construction:</span>{" "}
+                  <span className="bold">Construction:</span>{' '}
                   {property.construction}
                 </p>
               </Feature>
@@ -222,13 +222,13 @@ class Property extends Component {
             <FeatureContainer>
               <Feature>
                 <p>
-                  <span className="bold">Parking:</span>{" "}
+                  <span className="bold">Parking:</span>{' '}
                   {property.parking.description}
                 </p>
               </Feature>
               <Feature>
                 <p>
-                  <span className="bold">Spaces:</span>{" "}
+                  <span className="bold">Spaces:</span>{' '}
                   {property.parking.spaces}
                 </p>
               </Feature>
@@ -236,8 +236,8 @@ class Property extends Component {
             <FeatureContainer>
               <Feature>
                 <p>
-                  <span className="bold">Has Pool:</span>{" "}
-                  {!!property.pool ? "Yes" : "No"}
+                  <span className="bold">Has Pool:</span>{' '}
+                  {!!property.pool ? 'Yes' : 'No'}
                 </p>
               </Feature>
               <Feature>
@@ -261,7 +261,7 @@ class Property extends Component {
             <FeatureContainer>
               <Feature>
                 <p>
-                  <span className="bold">Foundation:</span>{" "}
+                  <span className="bold">Foundation:</span>{' '}
                   {property.foundation}
                 </p>
               </Feature>
@@ -274,7 +274,7 @@ class Property extends Component {
             <FeatureContainer>
               <FeatureNoBorder>
                 <p>
-                  <span className="bold">Additional Features:</span>{" "}
+                  <span className="bold">Additional Features:</span>{' '}
                   {property.exteriorFeatures}
                 </p>
               </FeatureNoBorder>
@@ -288,7 +288,7 @@ class Property extends Component {
               </Feature>
               <Feature>
                 <p>
-                  <span className="bold">Property Subtype:</span>{" "}
+                  <span className="bold">Property Subtype:</span>{' '}
                   {property.subType}
                 </p>
               </Feature>
@@ -301,7 +301,7 @@ class Property extends Component {
               </Feature>
               <Feature>
                 <p>
-                  <span className="bold">Property Subtype:</span>{" "}
+                  <span className="bold">Property Subtype:</span>{' '}
                   {property.subType}
                 </p>
               </Feature>
@@ -314,7 +314,7 @@ class Property extends Component {
               </Feature>
               <Feature>
                 <p>
-                  <span className="bold">HOA Amenities:</span>{" "}
+                  <span className="bold">HOA Amenities:</span>{' '}
                   {association.amenities}
                 </p>
               </Feature>
@@ -343,7 +343,7 @@ class Property extends Component {
                 </p>
               </Feature>
             </FeatureContainer>
-            <p style={{ padding: "40px 0px", fontSize: 12 }}>
+            <p style={{ padding: '40px 0px', fontSize: 12 }}>
               This listing courtesty of {agent.firstName} {agent.lastName}.
             </p>
           </StyledPage>

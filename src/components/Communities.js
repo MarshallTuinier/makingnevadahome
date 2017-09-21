@@ -1,17 +1,17 @@
-import React from "react";
-import styled from "styled-components";
-import communitiesImg from "../assets/communitiesImg.jpg";
-import CommunityButton from "./CommunityButton";
+import React from 'react';
+import styled from 'styled-components';
+import communitiesImg from '../assets/communitiesImg.jpg';
+import CommunityButton from './CommunityButton';
 
 const Communities = () => {
   const communityList = [
-    "HENDERSON",
-    "SUMMERLIN",
-    "SOUTH WEST",
-    "LAS VEGAS",
-    "BOULDER CITY",
-    "NORTH LAS VEGAS",
-    "NORTH WEST"
+    'HENDERSON',
+    'SUMMERLIN',
+    'SOUTH WEST',
+    'LAS VEGAS',
+    'BOULDER CITY',
+    'NORTH LAS VEGAS',
+    'NORTH WEST'
   ];
   return (
     <StyledContainer>
