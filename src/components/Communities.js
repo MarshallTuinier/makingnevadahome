@@ -47,7 +47,7 @@ const CommunitiesWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
-  justify-content: space-evenly;
+  justify-content: space-around;
   a {
     text-decoration: none;
   }
