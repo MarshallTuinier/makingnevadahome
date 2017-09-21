@@ -86,7 +86,36 @@ const Card = styled.div`
     }
   }
   @media (max-width: 600px) {
-    width: 95vw;
-    height: 95vw;
+    width: 65vw;
+    height: 65vw;
+    .price {
+      height: 15%;
+    }
+  }
+  @media (max-width: 450px) {
+    .price {
+      height: 20%;
+      text-align: center;
+    }
+    .home-info {
+      font-size: 12px;
+      h4 {
+        font-size: 12px;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      .price {
+        height: 100%;
+        font-size: 15px;
+      }
+      .home-info {
+        top: 40%;
+        font-size: 12px;
+        h4 {
+          font-size: 12px;
+        }
+      }
+    }
   }
 `;

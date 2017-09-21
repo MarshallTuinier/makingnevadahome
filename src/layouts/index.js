@@ -6,6 +6,8 @@ import Footer from "../components/Footer";
 import "typeface-varela-round";
 import "typeface-open-sans";
 import "./index.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const TemplateWrapper = ({ children }) => (
   <div>

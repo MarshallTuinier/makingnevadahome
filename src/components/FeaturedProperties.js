@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { fetchAllProperties } from "../utils/api";
 import PropertyCard from "./PropertyCard";
+import Slider from "react-slick";
 
 class FeaturedProperties extends Component {
   constructor(props) {
@@ -23,14 +24,31 @@ class FeaturedProperties extends Component {
     });
   }
   render() {
+    const settings = {
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      centerMode: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      infinite: true,
+      responsive: [
+        { breakpoint: 930, settings: { slidesToShow: 1 } },
+        { breakpoint: 1450, settings: { slidesToShow: 2, centerMode: false } },
+        { breakpoint: 1900, settings: { slidesToShow: 3 } }
+      ]
+    };
     return (
       <StyledContainer>
         <h2>Featured Properties</h2>
         {!this.state.loading && (
           <PropertiesContainer>
-            {this.state.data.map(property => (
-              <PropertyCard data={property} key={property.mlsId} />
-            ))}
+            <Slider {...settings}>
+              {this.state.data.map(property => (
+                <div>
+                  <PropertyCard data={property} key={property.mlsId} />
+                </div>
+              ))}
+            </Slider>
           </PropertiesContainer>
         )}
         {this.state.error && <p>Sorry, there seems to be an error</p>}
@@ -54,13 +72,14 @@ const StyledContainer = styled.div`
 `;
 
 const PropertiesContainer = styled.div`
-  padding: 0 0 30px 0;
   height: 100%;
-  max-width: 1700px;
+  width: 90%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  * {
+    min-height: 0;
+    min-width: 0;
+  }
 `;
 
 export default FeaturedProperties;
