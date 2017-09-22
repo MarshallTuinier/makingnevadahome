@@ -40,7 +40,9 @@ class FeaturedProperties extends Component {
     };
     return (
       <StyledContainer>
-        <h2>Featured Properties</h2>
+        <Heading>
+          <h2>Featured Properties</h2>
+        </Heading>
         {!this.state.loading && (
           <PropertiesContainer>
             <Slider {...settings}>
@@ -77,10 +79,33 @@ const PropertiesContainer = styled.div`
   width: 90%;
   padding: 20px;
   margin: 0 auto;
+  margin-bottom: 80px;
   display: flex;
   * {
     min-height: 0;
     min-width: 0;
+  }
+  @media (max-width: 900px) {
+    margin-bottom: 20px;
+  }
+`;
+
+const Heading = styled.div`
+  margin: 0 auto;
+  position: relative;
+  width: 20em;
+  height: 100px;
+  background-color: #003153;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: -50px;
+  border: 0.5px solid white;
+  @media (max-width: 900px) {
+    border: none;
+    background-color: inherit;
+    top: 0;
+    width: auto;
   }
 `;
 

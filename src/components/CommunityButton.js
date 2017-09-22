@@ -23,29 +23,29 @@ const CommunityButton = ({ children }) => {
 const StyledButton = styled.div`
   width: 210px;
   height: 58px;
-  background-color: white;
+  background-color: #20ace1;
   text-shadow: none;
-  color: #003153;
+  color: white;
   padding-top: 18px;
   margin: 10px 0;
-  border: 1px solid #003153;
-  outline: 3px solid white;
+  border: 1px solid white;
   transition: background-color 0.3s, color 0.3s, border 0.3s;
   &:hover {
     cursor: pointer;
     outline: none;
     border: 1px solid white;
-    background-color: #20ace1;
+    background-color: white;
 
     h3 {
-      color: white;
+      color: #003153;
     }
   }
 
   h3 {
     font-size: 20px;
     text-decoration: none;
-    color: #003153;
+    color: white;
+    transition: background-color 0.3s;
   }
 
   @media (max-width: 900px) {
@@ -54,11 +54,17 @@ const StyledButton = styled.div`
     border: none;
     outline: none;
     margin-bottom: 0;
+    background-color: white;
     h3 {
       margin-bottom: 0;
+      color: #003153;
     }
     &:hover {
       border: none;
+      background-color: #20ace1;
+      h3 {
+        color: white;
+      }
     }
   }
 `;

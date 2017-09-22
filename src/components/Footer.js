@@ -67,8 +67,16 @@ const StyledFooter = styled.div`
       text-decoration: none;
     }
     @media (max-width: 600px) {
+      text-align: center;
       font-size: 12px;
       flex-direction: column;
+      .logos {
+        height: 60px;
+        margin: 10px auto;
+      }
+      .footer-nav-container {
+        margin: 0 auto;
+      }
     }
   }
 

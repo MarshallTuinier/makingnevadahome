@@ -15,7 +15,9 @@ const Communities = () => {
   ];
   return (
     <StyledContainer>
-      <h2>Communities</h2>
+      <Heading>
+        <h2>Communities</h2>
+      </Heading>
       <CommunitiesWrapper>
         {communityList.map(city => (
           <CommunityButton key={city}>{city}</CommunityButton>
@@ -27,7 +29,7 @@ const Communities = () => {
 
 const StyledContainer = styled.div`
   width: 100%;
-  height: 300px;
+  height: 400px;
   color: white;
   text-align: center;
   background-color: #003153;
@@ -44,6 +46,7 @@ const StyledContainer = styled.div`
 
 const CommunitiesWrapper = styled.div`
   margin: 0 auto;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
@@ -56,6 +59,29 @@ const CommunitiesWrapper = styled.div`
     height: 425px;
     padding-bottom: 3px;
     justify-content: space-between;
+  }
+`;
+
+const Heading = styled.div`
+  margin: 0 auto;
+  position: relative;
+  width: 20em;
+  height: 100px;
+  color: #003153;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: -50px;
+  border: 0.5px solid #003153;
+  text-shadow: none;
+  @media (max-width: 900px) {
+    border: none;
+    background-color: inherit;
+    top: 0;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    width: auto;
   }
 `;
 

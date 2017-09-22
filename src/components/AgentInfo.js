@@ -58,10 +58,9 @@ const StyledContainer = styled.div`
   }
   .description {
     display: block;
-    width: 680px;
-    margin: 0 auto;
+    width: 750px;
+    margin: 10% auto;
     text-align: center;
-    padding-top: 11vw;
     font-size: 23px;
   }
   .agent-bar {
@@ -93,11 +92,13 @@ const StyledContainer = styled.div`
     }
     .description {
       padding-top: 30px;
+      margin-top: 5px;
+      margin-bottom: 50px;
       font-size: 16px;
       width: 550px;
     }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     h2 {
       font-size: 25px;
     }
@@ -107,6 +108,11 @@ const StyledContainer = styled.div`
     .agent-photo {
       display: none;
     }
+    .description {
+      width: 100%;
+      padding: 10px 20px;
+      margin-bottom: 0;
+    }
   }
   @media (max-width: 900px) {
     height: auto;
@@ -115,10 +121,6 @@ const StyledContainer = styled.div`
       text-shadow: none;
       color: black;
       height: auto;
-    }
-    .description {
-      width: 100%;
-      padding: 10px 20px;
     }
     h2 {
       font-size: 25px;
