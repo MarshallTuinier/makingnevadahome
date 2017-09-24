@@ -67,13 +67,13 @@ const Heading = styled.div`
   position: relative;
   width: 20em;
   height: 100px;
-  color: #003153;
-  background-color: white;
+  color: white;
+  background-color: #464646;
   display: flex;
   align-items: center;
   justify-content: space-around;
   top: -50px;
-  border: 0.5px solid #003153;
+  border: 0.5px solid white;
   text-shadow: none;
   @media (max-width: 900px) {
     border: none;

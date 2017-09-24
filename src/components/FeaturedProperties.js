@@ -29,7 +29,7 @@ class FeaturedProperties extends Component {
       slidesToScroll: 1,
       centerMode: true,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 4000,
       infinite: true,
       swipeToSlide: true,
       responsive: [
