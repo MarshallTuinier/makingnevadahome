@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+/*
+## This FeaturedProperties component initally took data from the OpenRETS API to use in the Site
+## I'm keeping the component here for future use just in case
+
 import { fetchAllProperties } from '../utils/api';
 import PropertyCard from './PropertyCard';
 import Slider from 'react-slick';
@@ -55,6 +59,21 @@ class FeaturedProperties extends Component {
           </PropertiesContainer>
         )}
         {this.state.error && <p>Sorry, there seems to be an error</p>}
+      </StyledContainer>
+    );
+  }
+}
+
+*/
+
+class FeaturedProperties extends Component {
+  render() {
+    return (
+      <StyledContainer>
+        <Heading>
+          <h2>Featured Properties</h2>
+        </Heading>
+        <PropertiesContainer />
       </StyledContainer>
     );
   }
