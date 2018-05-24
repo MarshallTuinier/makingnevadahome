@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/* import React, { Component } from 'react';
 import UnderNavImg from '../components/UnderNavImg';
 import { fetchSingleProperty } from '../utils/api';
 import queryString from 'query-string';
@@ -444,3 +444,4 @@ const FeatureContainer = styled.div`
   }
 `;
 export default Property;
+*/

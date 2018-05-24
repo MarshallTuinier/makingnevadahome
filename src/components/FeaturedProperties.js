@@ -73,7 +73,16 @@ class FeaturedProperties extends Component {
         <Heading>
           <h2>Featured Properties</h2>
         </Heading>
-        <PropertiesContainer />
+        <PropertiesContainer>
+          <iframe
+            src="https://las.mlsmatrix.com/Matrix/public/IDX.aspx?idx=d5cb599"
+            width="105%"
+            height="750"
+            frameborder="0"
+            marginwidth="0"
+            marginheight="0"
+          />
+        </PropertiesContainer>
       </StyledContainer>
     );
   }
@@ -95,8 +104,8 @@ const StyledContainer = styled.div`
 
 const PropertiesContainer = styled.div`
   height: 100%;
-  width: 90%;
-  padding: 20px;
+  width: 95%;
+  padding: 0px;
   margin: 0 auto;
   margin-bottom: 80px;
   display: flex;
