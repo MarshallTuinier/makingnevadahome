@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/react-fontawesome": "^0.0.20",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.17",
     "gatsby-link": "^1.6.15",
@@ -12,6 +15,7 @@
     "gatsby-plugin-typography": "^1.7.9",
     "query-string": "^5.0.0",
     "react-fa": "^4.2.0",
+    "react-fontawesome": "^1.6.1",
     "react-helmet": "^5.2.0",
     "react-responsive-carousel": "^3.1.25",
     "react-slick": "^0.15.4",

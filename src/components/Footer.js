@@ -2,10 +2,11 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import realtorlogos from '../assets/realtorlogos.png';
-
+import SocialButtons from './SocialButtons';
 const Footer = () => {
   return (
     <StyledFooter>
+      <SocialButtons />
       <div className="footer-container">
         <div className="footer-info">
           <div className="footer-nav-container">
