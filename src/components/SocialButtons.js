@@ -98,5 +98,13 @@ const StyledContainer = styled.div`
   .icon {
     margin: 20px;
   }
+
+  @media (max-width: 500px) {
+    width: 100%;
+
+    .btn {
+      transform: scale(0.8, 0.8);
+    }
+  }
 `;
 export default SocialButtons;
