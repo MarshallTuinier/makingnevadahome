@@ -11,9 +11,6 @@ const Search = () => {
           src="https://las.mlsmatrix.com/Matrix/public/IDX.aspx?idx=d07f59b"
           width="100%"
           height="800px"
-          frameborder="0"
-          marginwidth="0"
-          marginheight="0"
         />
       </StyledContainer>
     </div>

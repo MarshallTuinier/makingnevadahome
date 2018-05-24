@@ -78,9 +78,6 @@ class FeaturedProperties extends Component {
             src="https://las.mlsmatrix.com/Matrix/public/IDX.aspx?idx=d5cb599"
             width="105%"
             height="750"
-            frameborder="0"
-            marginwidth="0"
-            marginheight="0"
           />
         </PropertiesContainer>
       </StyledContainer>

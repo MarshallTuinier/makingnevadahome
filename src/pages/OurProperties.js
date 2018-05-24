@@ -10,9 +10,6 @@ const Properties = () => {
           src="https://las.mlsmatrix.com/Matrix/public/IDX.aspx?idx=95b259a"
           width="105%"
           height="1000px"
-          frameborder="0"
-          marginwidth="0"
-          marginheight="0"
         />
       </StyledContainer>
     </div>
