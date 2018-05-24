@@ -53,6 +53,7 @@ const StyledFooter = styled.div`
   min-height: 150px;
   color: white;
   font-size: 15px;
+  padding-top: 20px;
 
   .footer-container {
     margin: 0 auto;
