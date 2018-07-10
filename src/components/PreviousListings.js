@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropertyCard from './PropertyCard';
 import Slider from 'react-slick';
 import goldenSedrum from '../assets/goldenSedrum.jpg';
-import GVP from '../assets/251GVP.jpg';
+import GVP from '../assets/GVP.jpg';
 import bumblebee from '../assets/bumblebee.jpg';
 
 class PreviousListings extends Component {
@@ -23,7 +23,7 @@ class PreviousListings extends Component {
       },
       {
         address: '251 S. Green Valley Parkway #611, Henderson, NV 89012',
-        name: '251GVP',
+        name: 'GVP',
         photo: GVP,
         price: '$325,000',
         length: '',
