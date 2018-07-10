@@ -4,6 +4,7 @@ import PropertyCard from './PropertyCard';
 import Slider from 'react-slick';
 import goldenSedrum from '../assets/goldenSedrum.jpg';
 import bumblebee from '../assets/bumblebee.jpg';
+import gvp from '../assets/gvp.jpg';
 
 class PreviousListings extends Component {
   constructor(props) {
@@ -24,6 +25,15 @@ class PreviousListings extends Component {
         address: '4661 Bumblebee Circle, Las Vegas, NV 89122',
         name: 'bumblebee',
         photo: bumblebee,
+        price: '$325,000',
+        length: '',
+        beds: '4',
+        baths: '3'
+      },
+      {
+        address: '251 S. Green Valley Parkway #611, Henderson, NV 89012',
+        name: 'gvp',
+        photo: gvp,
         price: '$325,000',
         length: '',
         beds: '4',
