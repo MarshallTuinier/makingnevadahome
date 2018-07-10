@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import PropertyCard from './PropertyCard';
 import Slider from 'react-slick';
 import goldenSedrum from '../assets/goldenSedrum.jpg';
-import gvp from '../assets/gvp.jpg';
 import bumblebee from '../assets/bumblebee.jpg';
 
 class PreviousListings extends Component {
@@ -16,15 +15,6 @@ class PreviousListings extends Component {
         address: '736 Golden Sedum Drive, Henderson, NV 89011',
         name: 'goldenSedrum',
         photo: goldenSedrum,
-        price: '$325,000',
-        length: '',
-        beds: '4',
-        baths: '3'
-      },
-      {
-        address: '251 S. Green Valley Parkway #611, Henderson, NV 89012',
-        name: 'gvp',
-        photo: gvp,
         price: '$325,000',
         length: '',
         beds: '4',
