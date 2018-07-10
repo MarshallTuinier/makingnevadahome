@@ -10,27 +10,33 @@ import Twitter from '@fortawesome/fontawesome-free-brands/faTwitter';
 const SocialButtons = () => {
   return (
     <StyledContainer>
-      <div className="btn btnFacebook">
-        <FontAwesomeIcon
-          icon={Facebook}
-          size="3x"
-          className="icon iconFacebook"
-        />
-      </div>
-      <div className="btn btnInstagram">
-        <FontAwesomeIcon
-          icon={Instagram}
-          size="3x"
-          className="icon iconInstagram"
-        />
-      </div>
-      <div className="btn btnTwitter">
-        <FontAwesomeIcon
-          icon={Twitter}
-          size="3x"
-          className="icon iconTwitter"
-        />
-      </div>
+      <a>
+        <div className="btn btnFacebook">
+          <FontAwesomeIcon
+            icon={Facebook}
+            size="3x"
+            className="icon iconFacebook"
+          />
+        </div>
+      </a>
+      <a>
+        <div className="btn btnInstagram">
+          <FontAwesomeIcon
+            icon={Instagram}
+            size="3x"
+            className="icon iconInstagram"
+          />
+        </div>
+      </a>
+      <a>
+        <div className="btn btnTwitter">
+          <FontAwesomeIcon
+            icon={Twitter}
+            size="3x"
+            className="icon iconTwitter"
+          />
+        </div>
+      </a>
     </StyledContainer>
   );
 };
@@ -40,6 +46,9 @@ const StyledContainer = styled.div`
   height: 100px;
   display: flex;
   margin: 0 auto;
+  a {
+    margin: auto;
+  }
   .btn {
     height: 90px;
     width: 90px;

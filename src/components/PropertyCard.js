@@ -1,39 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 import numberWithCommas from '../utils/numberWithCommas';
-import { navigateTo } from 'gatsby-link';
 
 const PropertyCard = props => {
-  const handleClick = mlsId => {
-    navigateTo(`/property?id=${mlsId}`);
-  };
-
-  const { address, mlsId, listPrice, property } = props.data;
-  const baths = property.bathsFull + property.bathsHalf / 2;
-  const price = numberWithCommas(listPrice);
-
+  const { address, photo, price, length, beds, baths } = props.data;
   return (
-    <Card propertyData={props.data} onClick={() => handleClick(mlsId)}>
+    <Card propertyData={props.data}>
       <div className="home-info">
-        <h4>
-          {address.streetNumber} {address.streetName}
-        </h4>
-        <h4>
-          {address.city}, {address.state}
-        </h4>
+        <h4>{address}</h4>
+        <h4 />
         <p>
-          {property.bedrooms} bed, {baths} bath
+          {beds} beds, {baths} bath
         </p>
       </div>
       <div className="price">
-        <p>${price}</p>
+        <p>{price}</p>
       </div>
     </Card>
   );
 };
 
 export default PropertyCard;
-
 const Card = styled.div`
   position: relative;
   width: 400px;
@@ -42,8 +29,9 @@ const Card = styled.div`
   padding: 10px 0;
   margin: 20px 10px;
   text-shadow: 1px 1px 2px black;
-  background-image: url(${props => props.propertyData.photos[0]});
+  background-image: url('${props => props.propertyData.photo}');
   background-size: cover;
+  background-repeat: no-repeat;
   h4 {
     margin-bottom: 3px;
   }

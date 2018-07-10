@@ -32,7 +32,7 @@ class Header extends Component {
               <ContactBlock className="bars" onClick={this.handleHamburger}>
                 <Icon name="bars" />
               </ContactBlock>
-              <ContactBlock linkTo="tel:7026724396">
+              <ContactBlock linkTo="tel:7028215142">
                 <Icon name="phone" />
               </ContactBlock>
               <ContactBlock linkTo="mailto: info@makingnevadahome.com">
@@ -44,7 +44,9 @@ class Header extends Component {
               <h1>
                 <Link className="link" to="/">
                   <span onClick={this.handleHomeClick}>
-                    <span className="blue">making</span>NEVADA<span className="blue">home</span>
+                    <span className="blue">making</span>NEVADA<span className="blue">
+                      home
+                    </span>
                   </span>
                 </Link>
               </h1>
@@ -57,12 +59,12 @@ class Header extends Component {
                 <ContactCard>
                   <h5>Jason Brown</h5>
                   <Icon name="phone" />
-                  <span className="tel-number">555-555-5555</span>
+                  <span className="tel-number">702-821-5142</span>
                 </ContactCard>
                 <ContactCard>
                   <h5>David Hofer</h5>
                   <Icon name="phone" />
-                  <span className="tel-number">555-555-5555</span>
+                  <span className="tel-number">702-595-6381</span>
                 </ContactCard>
               </div>
               <StyledNavContainer open={this.state.navOpen}>

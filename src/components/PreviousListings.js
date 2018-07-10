@@ -1,32 +1,45 @@
-//This FeaturedProperties component initally took data from the OpenRETS API to use in the Site
-//I'm keeping the component here for future use just in case
-/*
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { fetchAllProperties } from '../utils/api';
 import PropertyCard from './PropertyCard';
 import Slider from 'react-slick';
+import goldenSedrum from '../assets/goldenSedrum.jpg';
+import GVP from '../assets/251GVP.jpg';
+import bumblebee from '../assets/bumblebee.jpg';
 
-class FeaturedProperties extends Component {
+class PreviousListings extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      data: [],
-      loading: true,
-      error: false
-    };
-  }
-
-  componentDidMount() {
-    fetchAllProperties().then(data => {
-      if (data !== 'error') {
-        this.setState({ data, loading: false });
-      } else {
-        this.setState({ error: true });
-      }
-    });
   }
   render() {
+    const propertyArray = [
+      {
+        address: '736 Golden Sedum Drive, Henderson, NV 89011',
+        name: 'goldenSedrum',
+        photo: goldenSedrum,
+        price: '$325,000',
+        length: '',
+        beds: '4',
+        baths: '3'
+      },
+      {
+        address: '251 S. Green Valley Parkway #611, Henderson, NV 89012',
+        name: '251GVP',
+        photo: GVP,
+        price: '$325,000',
+        length: '',
+        beds: '4',
+        baths: '3'
+      },
+      {
+        address: '4661 Bumblebee Circle, Las Vegas, NV 89122',
+        name: 'bumblebee',
+        photo: bumblebee,
+        price: '$325,000',
+        length: '',
+        beds: '4',
+        baths: '3'
+      }
+    ];
     const settings = {
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -41,42 +54,20 @@ class FeaturedProperties extends Component {
         { breakpoint: 1900, settings: { slidesToShow: 3 } }
       ]
     };
+
     return (
       <StyledContainer>
         <Heading>
-          <h2>Featured Properties</h2>
-        </Heading>
-        {!this.state.loading && (
-          <PropertiesContainer>
-            <Slider {...settings}>
-              {this.state.data.map(property => (
-                <div>
-                  <PropertyCard data={property} key={property.mlsId} />
-                </div>
-              ))}
-            </Slider>
-          </PropertiesContainer>
-        )}
-        {this.state.error && <p>Sorry, there seems to be an error</p>}
-      </StyledContainer>
-    );
-  }
-}
-
-
-class FeaturedProperties extends Component {
-  render() {
-    return (
-      <StyledContainer>
-        <Heading>
-          <h2>Featured Properties</h2>
+          <h2>Previous Listings</h2>
         </Heading>
         <PropertiesContainer>
-          <iframe
-            src="https://las.mlsmatrix.com/Matrix/public/IDX.aspx?idx=d5cb599"
-            width="105%"
-            height="750"
-          />
+          <Slider {...settings}>
+            {propertyArray.map(property => (
+              <div>
+                <PropertyCard data={property} />
+              </div>
+            ))}
+          </Slider>
         </PropertiesContainer>
       </StyledContainer>
     );
@@ -132,5 +123,4 @@ const Heading = styled.div`
   }
 `;
 
-export default FeaturedProperties;
-*/
+export default PreviousListings;

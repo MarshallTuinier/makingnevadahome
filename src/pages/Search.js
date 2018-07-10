@@ -5,12 +5,14 @@ import UnderNavImg from '../components/UnderNavImg';
 const Search = () => {
   return (
     <div>
-      <UnderNavImg />
+      {
+        //<UnderNavImg />
+      }
       <StyledContainer>
         <iframe
           src="https://las.mlsmatrix.com/Matrix/public/IDX.aspx?idx=d07f59b"
           width="100%"
-          height="800px"
+          height="1500px"
         />
       </StyledContainer>
     </div>

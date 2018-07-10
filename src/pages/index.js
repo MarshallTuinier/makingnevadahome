@@ -2,14 +2,14 @@ import React from 'react';
 import ImageCarousel from '../components/ImageCarousel';
 import AgentInfo from '../components/AgentInfo';
 import Communities from '../components/Communities';
-import FeaturedProperties from '../components/FeaturedProperties';
+import PreviousListings from '../components/PreviousListings';
 import styled from 'styled-components';
 
 const IndexPage = () => (
   <ResponsiveContainer>
     <ImageCarousel />
     <AgentInfo />
-    <FeaturedProperties />
+    <PreviousListings />
     <Communities />
   </ResponsiveContainer>
 );
