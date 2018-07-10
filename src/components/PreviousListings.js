@@ -4,7 +4,7 @@ import PropertyCard from './PropertyCard';
 import Slider from 'react-slick';
 import goldenSedrum from '../assets/goldenSedrum.jpg';
 import bumblebee from '../assets/bumblebee.jpg';
-import gvp from '../assets/gvp.jpg';
+import greenValley from '../assets/greenValley.jpg';
 
 class PreviousListings extends Component {
   constructor(props) {
@@ -32,8 +32,8 @@ class PreviousListings extends Component {
       },
       {
         address: '251 S. Green Valley Parkway #611, Henderson, NV 89012',
-        name: 'gvp',
-        photo: gvp,
+        name: 'greenValley',
+        photo: greenValley,
         price: '$325,000',
         length: '',
         beds: '4',
