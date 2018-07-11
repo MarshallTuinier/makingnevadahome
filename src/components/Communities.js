@@ -68,7 +68,7 @@ const Heading = styled.div`
   width: 20em;
   height: 100px;
   color: white;
-  background-color: #464646;
+  background-color: #003153;
   display: flex;
   align-items: center;
   justify-content: space-around;

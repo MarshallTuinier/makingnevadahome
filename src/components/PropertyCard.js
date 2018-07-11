@@ -26,13 +26,14 @@ const Card = styled.div`
   width: 400px;
   height: 400px;
   border: 1px solid white;
-  padding: 10px 0;
+  padding: 10px 2px;
   margin: 20px 10px;
   text-shadow: 1px 1px 2px black;
   background-image: url('${props => props.propertyData.photo}');
   background-size: cover;
   background-repeat: no-repeat;
   h4 {
+    margin: 0 3px;
     margin-bottom: 3px;
   }
   p {

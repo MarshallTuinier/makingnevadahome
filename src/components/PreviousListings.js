@@ -109,7 +109,7 @@ const Heading = styled.div`
   position: relative;
   width: 20em;
   height: 100px;
-  background-color: #003153;
+  background-color: #20ace1;
   display: flex;
   align-items: center;
   justify-content: space-around;

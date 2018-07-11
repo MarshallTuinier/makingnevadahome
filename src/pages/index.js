@@ -3,6 +3,7 @@ import ImageCarousel from '../components/ImageCarousel';
 import AgentInfo from '../components/AgentInfo';
 import Communities from '../components/Communities';
 import PreviousListings from '../components/PreviousListings';
+import Testimonials from '../components/Testimonials';
 import styled from 'styled-components';
 
 const IndexPage = () => (
@@ -10,6 +11,7 @@ const IndexPage = () => (
     <ImageCarousel />
     <AgentInfo />
     <PreviousListings />
+    <Testimonials />
     <Communities />
   </ResponsiveContainer>
 );
