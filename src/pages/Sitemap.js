@@ -98,7 +98,7 @@ const StyledPage = styled.div`
   h2 {
     margin-top: 50px;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     display: flex;
     flex-direction: column;
     .map {

@@ -13,7 +13,7 @@ const StyledImgContainer = styled.div`
   height: 275px;
   overflow: hidden;
   position: relative;
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     height: 200px;
   }
   @media (max-width: 600px) {

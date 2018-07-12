@@ -38,7 +38,7 @@ class FeaturedProperties extends Component {
       responsive: [
         { breakpoint: 930, settings: { slidesToShow: 1 } },
         { breakpoint: 1450, settings: { slidesToShow: 2, centerMode: false } },
-        { breakpoint: 1900, settings: { slidesToShow: 3 } }
+        { breakpoint: 1920, settings: { slidesToShow: 3 } }
       ]
     };
     return (
@@ -108,7 +108,7 @@ const PropertiesContainer = styled.div`
     min-height: 0;
     min-width: 0;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     margin-bottom: 20px;
   }
 `;
@@ -124,7 +124,7 @@ const Heading = styled.div`
   justify-content: space-around;
   top: -50px;
   border: 0.5px solid white;
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     border: none;
     background-color: inherit;
     top: 0;

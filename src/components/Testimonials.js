@@ -25,7 +25,7 @@ const StyledContainer = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   text-shadow: 1px 1px 2px black;
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     height: 100%;
   }
   .effect {
@@ -57,7 +57,7 @@ const Heading = styled.div`
   border: 0.5px solid white;
   text-shadow: none;
   z-index: 2;
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     border: none;
     background-color: inherit;
     top: 0;

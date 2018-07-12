@@ -114,7 +114,7 @@ const StyledContainer = styled.div`
       margin-bottom: 0;
     }
   }
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     height: auto;
     .agent-bar {
       background-color: white;

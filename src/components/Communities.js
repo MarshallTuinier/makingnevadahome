@@ -36,7 +36,7 @@ const StyledContainer = styled.div`
   background-color: #003153;
   background-image: url(${linen});
   text-shadow: 1px 1px 2px black;
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     height: 100%;
   }
 
@@ -51,12 +51,12 @@ const CommunitiesWrapper = styled.div`
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 920px;
   justify-content: space-around;
   a {
     text-decoration: none;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     flex-direction: column;
     height: 425px;
     padding-bottom: 3px;
@@ -77,7 +77,7 @@ const Heading = styled.div`
   top: -50px;
   border: 0.5px solid white;
   text-shadow: none;
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     border: none;
     background-color: inherit;
     top: 0;

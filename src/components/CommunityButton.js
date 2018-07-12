@@ -48,7 +48,7 @@ const StyledButton = styled.div`
     transition: background-color 0.3s;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     width: 100%;
     margin: 0 auto;
     border: none;

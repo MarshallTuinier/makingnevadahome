@@ -381,7 +381,7 @@ const StyledPage = styled.div`
     font-weight: bold;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     margin-top: -26px;
   }
 `;
@@ -396,7 +396,7 @@ const StyledContainer = styled.div`
 const MainInfo = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     flex-direction: column;
     align-items: center;
   }
@@ -420,7 +420,7 @@ const Feature = styled.div`
     font-size: 12px;
     margin: 0;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     width: 100%;
   }
 `;
@@ -432,7 +432,7 @@ const FeatureNoBorder = styled.div`
     font-size: 12px;
     margin: 0;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     width: 100%;
     &:nth-child(2) {
       border-top: 1px solid #ccc;
@@ -443,7 +443,7 @@ const FeatureNoBorder = styled.div`
 const FeatureContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     flex-direction: column;
   }
 `;

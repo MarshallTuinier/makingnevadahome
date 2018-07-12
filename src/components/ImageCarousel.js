@@ -46,7 +46,7 @@ const StyledContainer = styled.div`
     background-color: white !important;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     display: none;
   }
 `;

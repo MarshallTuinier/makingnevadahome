@@ -45,9 +45,7 @@ class Header extends Component {
               <h1>
                 <Link className="link" to="/">
                   <span onClick={this.handleHomeClick}>
-                    <span className="blue">making</span>NEVADA<span className="blue">
-                      home
-                    </span>
+                    <span>making</span>NEVADA<span>home</span>
                   </span>
                 </Link>
               </h1>
@@ -133,7 +131,7 @@ const StyledHeader = styled.div`
     position: relative;
     width: 400px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .link {
@@ -174,7 +172,7 @@ const StyledHeader = styled.div`
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     padding-bottom: 1px;
     .header-container {
       flex-direction: column;
@@ -239,10 +237,10 @@ const StyledNavContainer = styled.div`
   align-items: flex-end;
   margin-bottom: 1.45rem;
   margin-right: 20px;
-  width: 400px;
+  width: 450px;
   font-family: Varela Round;
 
-  @media (max-width: 900px) {
+  @media (max-width: 950px) {
     margin: 10px auto;
   }
 
