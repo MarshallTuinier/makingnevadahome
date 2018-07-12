@@ -102,7 +102,7 @@ class Header extends Component {
 
 const NavBar = styled.nav`
   width: 100%;
-  background: #20ace1;
+  background: #7c7c7c;
   background-image: url(${diamond});
   text-shadow: 1px 1px 2px black;
   .blue {
