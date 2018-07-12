@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import ContactCard from '../components/ContactCard';
 import ContactBlock from '../components/ContactBlock';
 import { Icon } from 'react-fa';
+import diamond from '../assets/diamond-upholstery.png';
 
 class Header extends Component {
   constructor(props) {
@@ -73,9 +74,9 @@ class Header extends Component {
                     About
                   </div>
                 </Link>
-                <Link to="/OurProperties">
+                <Link to="/CurrentListings">
                   <div className="nav-item" onClick={this.handleHamburger}>
-                    Our Properties
+                    Current Listings
                   </div>
                 </Link>
                 <Link to="/Search">
@@ -102,13 +103,13 @@ class Header extends Component {
 const NavBar = styled.nav`
   width: 100%;
   background: #20ace1;
+  background-image: url(${diamond});
   text-shadow: 1px 1px 2px black;
   .blue {
     color: #003153;
   }
 `;
 const StyledHeader = styled.div`
-  background: #20ace1;
   color: #003153;
   max-width: 1200px;
   margin: 0 auto;
@@ -147,7 +148,6 @@ const StyledHeader = styled.div`
     max-width: 660px;
     margin-left: 20px;
     margin-bottom: 1rem;
-    background-color: #20ace1;
   }
 
   .header-container {

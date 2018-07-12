@@ -5,6 +5,7 @@ import Slider from 'react-slick';
 import goldenSedrum from '../assets/goldenSedrum.jpg';
 import bumblebee from '../assets/bumblebee.jpg';
 import greenValley from '../assets/greenValley.jpg';
+import linen from '../assets/linen.png';
 
 class PreviousListings extends Component {
   constructor(props) {
@@ -75,13 +76,16 @@ class PreviousListings extends Component {
 }
 
 const StyledContainer = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
   min-height: 350px;
   background-color: #20ace1;
+  background-image: url(${linen});
   color: white;
   text-align: center;
   text-shadow: 1px 1px 2px black;
+}
 
   h2 {
     margin-top: 20px;

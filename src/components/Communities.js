@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import communitiesImg from '../assets/communitiesImg.jpg';
 import CommunityButton from './CommunityButton';
+import linen from '../assets/linen.png';
 
 const Communities = () => {
   const communityList = [
@@ -33,6 +34,7 @@ const StyledContainer = styled.div`
   color: white;
   text-align: center;
   background-color: #003153;
+  background-image: url(${linen});
   text-shadow: 1px 1px 2px black;
   @media (max-width: 900px) {
     height: 100%;

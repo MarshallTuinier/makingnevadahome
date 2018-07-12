@@ -3,6 +3,8 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import realtorlogos from '../assets/realtorlogos.png';
 import SocialButtons from './SocialButtons';
+import diamond from '../assets/diamond-upholstery.png';
+
 const Footer = () => {
   return (
     <StyledFooter>
@@ -49,6 +51,7 @@ const Footer = () => {
 const StyledFooter = styled.div`
   width: 100%;
   background-color: #7c7c7c;
+  background-image: url(${diamond});
   height: 100%;
   min-height: 150px;
   color: white;

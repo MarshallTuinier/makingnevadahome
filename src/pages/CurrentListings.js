@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import UnderNavImg from '../components/UnderNavImg';
-const Properties = () => {
+const CurrentListings = () => {
   return (
     <div>
       <UnderNavImg />
@@ -22,4 +22,4 @@ const StyledContainer = styled.div`
   overflow: hidden;
   margin-bottom: -40px;
 `;
-export default Properties;
+export default CurrentListings;

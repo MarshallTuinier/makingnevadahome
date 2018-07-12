@@ -6,6 +6,7 @@ import brands from '@fortawesome/fontawesome-free-brands';
 import Instagram from '@fortawesome/fontawesome-free-brands/faInstagram';
 import Facebook from '@fortawesome/fontawesome-free-brands/faFacebookF';
 import Twitter from '@fortawesome/fontawesome-free-brands/faTwitter';
+import Pinterest from '@fortawesome/fontawesome-free-brands/faPinterest';
 
 const SocialButtons = () => {
   return (
@@ -34,6 +35,15 @@ const SocialButtons = () => {
             icon={Twitter}
             size="3x"
             className="icon iconTwitter"
+          />
+        </div>
+      </a>
+      <a>
+        <div className="btn btnPinterest">
+          <FontAwesomeIcon
+            icon={Pinterest}
+            size="3x"
+            className="icon iconPinterest"
           />
         </div>
       </a>
@@ -99,6 +109,17 @@ const StyledContainer = styled.div`
       background-color: white;
       .iconTwitter {
         color: #3cf;
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+
+  .btnPinterest {
+    background-color: #cb2027;
+    &:hover {
+      background-color: white;
+      .iconPinterest {
+        color: #cb2027;
         transform: scale(1.1, 1.1);
       }
     }
