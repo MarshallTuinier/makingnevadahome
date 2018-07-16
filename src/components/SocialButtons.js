@@ -55,6 +55,8 @@ const StyledContainer = styled.div`
   width: 500px;
   height: 100px;
   display: flex;
+  justify-content: space-between;
+  flex-shrink: 1;
   margin: 0 auto;
   a {
     margin: auto;
@@ -130,10 +132,23 @@ const StyledContainer = styled.div`
   }
 
   @media (max-width: 500px) {
-    width: 100%;
-
+    width: 300px;
+    margin-right: 20vw;
+    a {
+      width: 50px;
+      height: 50px;
+    }
     .btn {
       transform: scale(0.8, 0.8);
+    }
+  }
+
+  @media (max-width: 400px) {
+    width: 225px;
+    margin: 0 auto;
+    margin-right: 20vw;
+    .btn {
+      transform: scale(0.5, 0.5);
     }
   }
 `;

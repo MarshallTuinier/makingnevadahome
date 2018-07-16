@@ -5,6 +5,7 @@ import ContactCard from '../components/ContactCard';
 import ContactBlock from '../components/ContactBlock';
 import { Icon } from 'react-fa';
 import diamond from '../assets/diamond-upholstery.png';
+import CRRealty from '../assets/CRRealty.png';
 
 class Header extends Component {
   constructor(props) {
@@ -28,32 +29,38 @@ class Header extends Component {
     return (
       <NavBar>
         <StyledHeader open={this.state.navOpen}>
+          <div className="contact-buttons">
+            <ContactBlock className="bars" onClick={this.handleHamburger}>
+              <Icon name="bars" />
+            </ContactBlock>
+            <ContactBlock linkTo="tel:7028215142">
+              <Icon name="phone" />
+            </ContactBlock>
+            <ContactBlock linkTo="mailto: info@makingnevadahome.com">
+              <Icon name="envelope" />
+            </ContactBlock>
+          </div>
           <div className="header-container">
-            <div className="contact-buttons">
-              <ContactBlock className="bars" onClick={this.handleHamburger}>
-                <Icon name="bars" />
-              </ContactBlock>
-              <ContactBlock linkTo="tel:7028215142">
-                <Icon name="phone" />
-              </ContactBlock>
-              <ContactBlock linkTo="mailto: info@makingnevadahome.com">
-                <Icon name="envelope" />
-              </ContactBlock>
+            <div className="header-left">
+              <div className="header-content">
+                <h1>
+                  <Link className="link" to="/">
+                    <span onClick={this.handleHomeClick}>
+                      <span className="blue">making</span>NEVADA<span className="blue">
+                        home
+                      </span>
+                    </span>
+                  </Link>
+                </h1>
+                <p className="tagline">
+                  Your #1 Choice for Las Vegas Valley Real Estate
+                </p>
+              </div>
+              <div className="logo">
+                <img src={CRRealty} />
+              </div>
             </div>
-
-            <div className="header-content">
-              <h1>
-                <Link className="link" to="/">
-                  <span onClick={this.handleHomeClick}>
-                    <span>making</span>NEVADA<span>home</span>
-                  </span>
-                </Link>
-              </h1>
-              <p className="tagline">
-                Your #1 Choice for Las Vegas Valley Real Estate
-              </p>
-            </div>
-            <NavRight>
+            <div className="navRight">
               <div className="contact-wrapper">
                 <ContactCard>
                   <h5>Jason Brown</h5>
@@ -88,7 +95,7 @@ class Header extends Component {
                   </div>
                 </Link>
               </StyledNavContainer>
-            </NavRight>
+            </div>
           </div>
         </StyledHeader>
       </NavBar>
@@ -100,7 +107,7 @@ class Header extends Component {
 
 const NavBar = styled.nav`
   width: 100%;
-  background: #7c7c7c;
+  background: #20ace1;
   background-image: url(${diamond});
   text-shadow: 1px 1px 2px black;
   .blue {
@@ -109,9 +116,10 @@ const NavBar = styled.nav`
 `;
 const StyledHeader = styled.div`
   color: #003153;
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
+
   .contact-buttons {
     display: none;
   }
@@ -143,17 +151,26 @@ const StyledHeader = styled.div`
   }
 
   .header-content {
-    max-width: 660px;
+    max-width: 1200px;
     margin-left: 20px;
-    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
   }
 
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    img {
+      margin: 0 auto;
+    }
+  }
   .header-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
     margin: 0 auto;
   }
 
@@ -172,13 +189,16 @@ const StyledHeader = styled.div`
     }
   }
 
-  @media (max-width: 920px) {
+  @media (max-width: 1425px) {
     padding-bottom: 1px;
     .header-container {
       flex-direction: column;
       justify-content: space-around;
       align-items: space-around;
       margin-bottom: 0;
+    }
+    .header-left {
+      flex-direction: column;
     }
     .contact-buttons {
       display: flex;
@@ -196,6 +216,9 @@ const StyledHeader = styled.div`
     }
     .tagline {
       display: none;
+    }
+    .header-left {
+      margin: 0 auto;
     }
   }
 
@@ -240,7 +263,7 @@ const StyledNavContainer = styled.div`
   width: 450px;
   font-family: Varela Round;
 
-  @media (max-width: 950px) {
+  @media (max-width: 1425px) {
     margin: 10px auto;
   }
 
@@ -272,8 +295,6 @@ const StyledNavContainer = styled.div`
     }
   }
 `;
-
-const NavRight = styled.div``;
 
 //---------End Styles--------------
 
