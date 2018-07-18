@@ -71,8 +71,8 @@ const StyledContainer = styled.div`
     left: 0;
     width: 400px;
     height: 500px;
-    margin: 50px;
-    margin-left: 10vw;
+    margin: 100px;
+    margin-left: 15vw;
   }
   .bottom-right {
     position: absolute;
@@ -80,8 +80,8 @@ const StyledContainer = styled.div`
     right: 0;
     width: 400px;
     height: 500px;
-    margin: 50px;
-    margin-right: 10vw;
+    margin: 200px;
+    margin-right: 15vw;
   }
 
   .quote-left {
@@ -131,7 +131,15 @@ const StyledContainer = styled.div`
     width: 50vw;
     height: 100%;
   }
+  @media (max-width: 1300px) {
+    .top-right {
+      margin-left: 8vw;
+    }
 
+    .bottom-left {
+      margin-right: 8vw;
+    }
+  }
   @media (max-width: 1000px) {
     background-image: none;
     height: 100%;

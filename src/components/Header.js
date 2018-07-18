@@ -42,6 +42,9 @@ class Header extends Component {
           </div>
           <div className="header-container">
             <div className="header-left">
+              <div className="logo">
+                <img src={CRRealty} />
+              </div>
               <div className="header-content">
                 <h1>
                   <Link className="link" to="/">
@@ -56,11 +59,8 @@ class Header extends Component {
                   Your #1 Choice for Las Vegas Valley Real Estate
                 </p>
               </div>
-              <div className="logo">
-                <img src={CRRealty} />
-              </div>
             </div>
-            <div className="navRight">
+            <div className="nav-right">
               <div className="contact-wrapper">
                 <ContactCard>
                   <h5>Jason Brown</h5>
@@ -152,19 +152,26 @@ const StyledHeader = styled.div`
 
   .header-content {
     max-width: 1200px;
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
   }
 
+  .logo {
+    transform: scale(0.8);
+    margin-left: -20px;
+  }
   .header-left {
     display: flex;
     flex-direction: row;
     img {
       margin: 0 auto;
     }
+  }
+
+  .nav-right {
+    margin-top: 15px;
   }
   .header-container {
     display: flex;
@@ -198,7 +205,7 @@ const StyledHeader = styled.div`
       margin-bottom: 0;
     }
     .header-left {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     .contact-buttons {
       display: flex;
@@ -219,6 +226,10 @@ const StyledHeader = styled.div`
     }
     .header-left {
       margin: 0 auto;
+    }
+
+    .nav-right {
+      margin-top: -20px;
     }
   }
 
