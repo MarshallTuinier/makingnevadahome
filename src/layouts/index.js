@@ -17,7 +17,10 @@ class TemplateWrapper extends React.Component {
         <Helmet
           title="Making Nevada Home"
           meta={[
-            { name: 'description', content: 'Sample' },
+            {
+              name: 'Making Nevada Home',
+              content: 'Number 1 in Las Vegas Valley Real Estate'
+            },
             {
               name: 'keywords',
               content:

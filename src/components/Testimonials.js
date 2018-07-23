@@ -20,7 +20,7 @@ const Testimonials = () => {
           recommend this great guy.
           <br />
           <br />
-          -Instert Name, 2018
+          2018
         </div>
         <div className="quote-right">&rdquo;</div>
       </div>
@@ -34,7 +34,7 @@ const Testimonials = () => {
           heartbeat.
           <br />
           <br />
-          -Insert Name, 2017
+          2017
         </div>
         <div className="quote-right">&rdquo;</div>
       </div>

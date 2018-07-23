@@ -26,19 +26,19 @@ class PreviousListings extends Component {
         address: '4661 Bumblebee Circle, Las Vegas, NV 89122',
         name: 'bumblebee',
         photo: bumblebee,
-        price: '$325,000',
+        price: '$190,000',
         length: '',
-        beds: '4',
-        baths: '3'
+        beds: '2',
+        baths: '2'
       },
       {
         address: '251 S. Green Valley Parkway #611, Henderson, NV 89012',
         name: 'greenValley',
         photo: greenValley,
-        price: '$325,000',
+        price: '$253,500',
         length: '',
-        beds: '4',
-        baths: '3'
+        beds: '2',
+        baths: '2.5'
       }
     ];
     const settings = {
