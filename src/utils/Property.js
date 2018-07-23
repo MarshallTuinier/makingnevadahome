@@ -53,7 +53,6 @@ class Property extends Component {
       } = this.state.data;
       const { bathsFull, bathsHalf, area, bedrooms } = property;
       const price = numberWithCommas(listPrice);
-      console.log(this.state.data);
       return (
         <StyledContainer>
           <Helmet title={address.streetNumber + ' ' + address.streetName} />

@@ -64,7 +64,7 @@ class PreviousListings extends Component {
         <PropertiesContainer>
           <Slider {...settings}>
             {propertyArray.map(property => (
-              <div>
+              <div key={property.name}>
                 <PropertyCard data={property} />
               </div>
             ))}

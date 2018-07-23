@@ -10,24 +10,28 @@ import './index.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet
-      title="Making Nevada Home"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        {
-          name: 'keywords',
-          content:
-            'Making Nevada Home, Las Vegas, Vegas, Henderson, Southern Neava, Real Estate, Home, Home Buying, Real, Estate'
-        }
-      ]}
-    />
-    <Header />
-    <StyledBody>{children()}</StyledBody>
-    <Footer />
-  </div>
-);
+class TemplateWrapper extends React.Component {
+  render() {
+    return (
+      <div>
+        <Helmet
+          title="Making Nevada Home"
+          meta={[
+            { name: 'description', content: 'Sample' },
+            {
+              name: 'keywords',
+              content:
+                'Making Nevada Home, Las Vegas, Vegas, Henderson, Southern Neava, Real Estate, Home, Home Buying, Real, Estate'
+            }
+          ]}
+        />
+        <Header />
+        <StyledBody>{this.props.children()}</StyledBody>
+        <Footer />
+      </div>
+    );
+  }
+}
 
 //-----Styles-----
 
