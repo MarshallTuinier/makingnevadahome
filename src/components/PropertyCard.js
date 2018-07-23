@@ -14,7 +14,7 @@ const PropertyCard = props => {
         </p>
       </div>
       <div className="price">
-        <p>{price}</p>
+        <p>Sold for {price}</p>
       </div>
     </Card>
   );
