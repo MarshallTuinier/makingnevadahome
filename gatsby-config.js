@@ -3,20 +3,15 @@ module.exports = {
     title: `Making Nevada Home`
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     {
-  resolve: `gatsby-source-filesystem`,
-  options: {
-    path: `${__dirname}/src/assets`,
-    name: 'assets',
-  },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp` /*
-    {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`
-      },
-    },*/
+        path: `${__dirname}/src/assets`,
+        name: 'assets'
+      }
+    }
   ]
 };
