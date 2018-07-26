@@ -16,8 +16,8 @@ const Footer = () => {
               <p>About</p>
             </Link>
             <span>|</span>
-            <Link to="/OurProperties">
-              <p>Our Properties</p>
+            <Link to="/CurrentListings">
+              <p>Current Listings</p>
             </Link>
             <span>|</span>
             <Link to="/Search">
