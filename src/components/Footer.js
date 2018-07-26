@@ -28,12 +28,10 @@ const Footer = () => {
               <p>Contact</p>
             </Link>
           </div>
-          <p>
-            &copy; 2017 makingnevadahome.com PID # 201743. All rights reserved.
-          </p>
-          <p>
-            CR Realty Services, LLC 1200 S 4th St, Suite 102 Las Vegas, NV 89104
-          </p>
+          <p>&copy; 2018 makingnevadahome.com All rights reserved</p>
+          <p>CR Realty Services LLC</p>
+          <p>1200 S 4th St, Suite 102</p>
+          <p>Las Vegas, NV 89104</p>
           <Link to="/Sitemap">
             <p>Sitemap</p>
           </Link>
