@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import PropertyCard from './PropertyCard';
 import Slider from 'react-slick';
 import goldenSedrum from '../assets/goldenSedrum.jpg';
-import blancoCaballo from '../assets/blancoCaballo.jpg';
+import blancoCaballo from '../assets/BlancoCaballo.jpg';
 import bumblebee from '../assets/bumblebee.jpg';
 import greenValley from '../assets/greenValley.jpg';
 import linen from '../assets/linen.png';
