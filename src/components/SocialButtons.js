@@ -11,7 +11,11 @@ import Pinterest from '@fortawesome/fontawesome-free-brands/faPinterest';
 const SocialButtons = () => {
   return (
     <StyledContainer>
-      <a>
+      <a
+        href="https://www.facebook.com/MakingNevadaHome/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className="btn btnFacebook">
           <FontAwesomeIcon
             icon={Facebook}
@@ -20,7 +24,11 @@ const SocialButtons = () => {
           />
         </div>
       </a>
-      <a>
+      <a
+        href="https://www.instagram.com/MakingNevadaHome/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className="btn btnInstagram">
           <FontAwesomeIcon
             icon={Instagram}
@@ -38,7 +46,11 @@ const SocialButtons = () => {
           />
         </div>
       </a>
-      <a>
+      <a
+        href="https://www.pinterest.com/MakingNevadaHome/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className="btn btnPinterest">
           <FontAwesomeIcon
             icon={Pinterest}

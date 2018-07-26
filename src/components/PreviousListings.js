@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropertyCard from './PropertyCard';
 import Slider from 'react-slick';
 import goldenSedrum from '../assets/goldenSedrum.jpg';
+import blancoCaballo from '../assets/blancoCaballo.jpg';
 import bumblebee from '../assets/bumblebee.jpg';
 import greenValley from '../assets/greenValley.jpg';
 import linen from '../assets/linen.png';
@@ -39,6 +40,15 @@ class PreviousListings extends Component {
         length: '',
         beds: '2',
         baths: '2.5'
+      },
+      {
+        address: '913 Blanco Caballo Way, Henderson, NV 89015',
+        name: 'blancoCaballo',
+        photo: blancoCaballo,
+        price: '$265,000',
+        length: '',
+        beds: '4',
+        baths: '2'
       }
     ];
     const settings = {
