@@ -19,7 +19,7 @@ const ImageCarousel = props => (
       <Img sizes={props.data.sliderImg5.sizes} />
       <Img sizes={props.data.sliderImg2.sizes} />
       <Img sizes={props.data.sliderImg3.sizes} />
-      <Img sizes={props.data.sliderImg4.sizes} />>
+      <Img sizes={props.data.sliderImg4.sizes} />
       <Img sizes={props.data.sliderImg1.sizes} />
     </Carousel>
   </StyledContainer>
