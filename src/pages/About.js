@@ -35,11 +35,12 @@ const About = props => {
           <h2>David Hofer</h2>
           <p>
             My name is David Hofer and I have been a real estate appraiser for
-            the past 27+ years and owned my own appraisal business in the Las
-            Vegas Valley area for the past 19 years. Although retired from the
-            Appraisal business since 2012, I still keep up with what’s going on
-            in the industry and keep my knowledge of the market and skills sharp
-            to benefit my Buyer and Seller clients.
+            the past 25 years and owned my own appraisal business in the Las
+            Vegas Valley area for 19 years, combined with 10 years of real
+            estate experience. Although retired from the Appraisal business
+            since 2012, I still keep up with what’s going on in the industry and
+            keep my knowledge of the market and skills sharp to benefit my Buyer
+            and Seller clients.
             <br />
             <br />
             I work for you. I am here to help you find a home you love or an
@@ -90,8 +91,8 @@ const About = props => {
             <br />
             <br />
             Jason has been engaged in the real estate and mortgage industry for
-            more than 13 years, and Dave had been a real estate appraiser in the
-            Las Vegas valley for more than 27 years.
+            more than 13 years, and David had been a real estate appraiser in
+            the Las Vegas valley for more than 27 years.
             <br />
             <br />
             This has helped us to be knowledgeable in every step of the home
