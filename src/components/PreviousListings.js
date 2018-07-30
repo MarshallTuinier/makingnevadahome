@@ -36,7 +36,7 @@ class PreviousListings extends Component {
         address: '251 S. Green Valley Parkway #611, Henderson, NV 89012',
         name: 'greenValley',
         photo: greenValley,
-        price: '$253,500',
+        price: '$250,000',
         length: '',
         beds: '2',
         baths: '2.5'
