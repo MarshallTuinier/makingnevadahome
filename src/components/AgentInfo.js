@@ -17,12 +17,12 @@ const AgentInfo = () => {
             long process of analyzing, reflecting, dreaming and
             number-crunching. We will not take your journey lightly. We will
             always be on hand to lend you the support you need in any
-            stage--whether in home viewing, staging an open house, looking for
-            the right mortgage or closing the deal. As a boutique real estate
-            company, we have the independence to explore all the available tools
-            to successfully market your property or help you find your dream
-            home. We won't hesitate to tailor our services to better suit your
-            unique situation.
+            stage--whether in home viewing, staging, looking for the right
+            mortgage or closing the deal. As a boutique real estate company, we
+            have the independence to explore all the available tools to
+            successfully market your property or help you find your dream home.
+            We won't hesitate to tailor our services to better suit your unique
+            situation.
           </p>
         </div>
         <img className="agent-photo david" src={DavidHofer} />
