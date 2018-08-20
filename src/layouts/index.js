@@ -9,6 +9,7 @@ import 'typeface-league-script';
 import './index.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import favicon from '../assets/favicon.png';
 
 class TemplateWrapper extends React.Component {
   render() {
@@ -26,6 +27,9 @@ class TemplateWrapper extends React.Component {
               content:
                 'Making Nevada Home, Las Vegas, Vegas, Henderson, Southern Neava, Real Estate, Home, Home Buying, Real, Estate'
             }
+          ]}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
           ]}
         />
         <Header />
