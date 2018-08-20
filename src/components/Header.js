@@ -33,10 +33,10 @@ class Header extends Component {
             <ContactBlock className="bars" onClick={this.handleHamburger}>
               <Icon name="bars" />
             </ContactBlock>
-            <ContactBlock linkTo="tel:7028215142">
+            <ContactBlock linkTo="tel:7025956381">
               <Icon name="phone" />
             </ContactBlock>
-            <ContactBlock linkTo="mailto: info@makingnevadahome.com">
+            <ContactBlock linkTo="mailto: makingnevadahome@gmail.com">
               <Icon name="envelope" />
             </ContactBlock>
           </div>
