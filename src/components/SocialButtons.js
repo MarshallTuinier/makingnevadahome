@@ -38,7 +38,11 @@ const SocialButtons = () => {
           />
         </div>
       </OutboundLink>
-      <OutboundLink>
+      <OutboundLink
+        href="https://www.twitter.com/MakingNVHome/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className="btn btnTwitter">
           <FontAwesomeIcon
             icon={Twitter}
