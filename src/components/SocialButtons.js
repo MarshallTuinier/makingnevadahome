@@ -7,11 +7,12 @@ import Instagram from '@fortawesome/fontawesome-free-brands/faInstagram';
 import Facebook from '@fortawesome/fontawesome-free-brands/faFacebookF';
 import Twitter from '@fortawesome/fontawesome-free-brands/faTwitter';
 import Pinterest from '@fortawesome/fontawesome-free-brands/faPinterest';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 const SocialButtons = () => {
   return (
     <StyledContainer>
-      <a
+      <OutboundLink
         href="https://www.facebook.com/MakingNevadaHome/"
         target="_blank"
         rel="noopener noreferrer"
@@ -23,8 +24,8 @@ const SocialButtons = () => {
             className="icon iconFacebook"
           />
         </div>
-      </a>
-      <a
+      </OutboundLink>
+      <OutboundLink
         href="https://www.instagram.com/MakingNevadaHome/"
         target="_blank"
         rel="noopener noreferrer"
@@ -36,8 +37,8 @@ const SocialButtons = () => {
             className="icon iconInstagram"
           />
         </div>
-      </a>
-      <a>
+      </OutboundLink>
+      <OutboundLink>
         <div className="btn btnTwitter">
           <FontAwesomeIcon
             icon={Twitter}
@@ -45,8 +46,8 @@ const SocialButtons = () => {
             className="icon iconTwitter"
           />
         </div>
-      </a>
-      <a
+      </OutboundLink>
+      <OutboundLink
         href="https://www.pinterest.com/MakingNevadaHome/"
         target="_blank"
         rel="noopener noreferrer"
@@ -58,7 +59,7 @@ const SocialButtons = () => {
             className="icon iconPinterest"
           />
         </div>
-      </a>
+      </OutboundLink>
     </StyledContainer>
   );
 };
