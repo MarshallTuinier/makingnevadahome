@@ -4,12 +4,11 @@ import UnderNavImg from '../components/UnderNavImg';
 const CurrentListings = () => {
   return (
     <div>
-      <UnderNavImg />
       <StyledContainer>
         <iframe
           src="https://las.mlsmatrix.com/Matrix/public/IDX.aspx?idx=95b259a"
           width="105%"
-          height="1000px"
+          height="2500px"
         />
       </StyledContainer>
     </div>
