@@ -2,8 +2,16 @@ import React, { Component } from 'react';
 
 class Listing extends Component {
   render() {
-    const mls = this.props.location.search.slice(5, -10);
-    console.log(mls);
+    const parseQueryString = input =>
+      input
+        .slice(input.indexOf('?') + 1)
+        .match(/[\w\d%\-!.~'()\*]+=[\w\d%\-!.~'()\*]+/g)
+        .map(s => s.split('=').map(decodeURIComponent))
+        .reduce(
+          (obj, [key, value]) => Object.assign(obj, { [key]: value }),
+          {}
+        );
+    const mls = parseQueryString(this.props.location.search).mls;
     return (
       <div style={{ height: '95vw', maxHeight: '1100px' }}>
         <iframe
