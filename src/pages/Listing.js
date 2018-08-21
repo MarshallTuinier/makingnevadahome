@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 
 class Listing extends Component {
+  parseQueryString = i =>
+    Array.from(new URLSearchParams(i).entries()).reduce(
+      (c, p) => ((c[p[0]] = p[1]), c),
+      {}
+    );
   render() {
-    const parseQueryString = i =>
-      Array.from(new URLSearchParams(i).entries()).reduce(
-        (c, p) => ((c[p[0]] = p[1]), c),
-        {}
-      );
-
-    const mls = parseQueryString(this.props.location.search).mls;
+    const mls = this.parseQueryString(this.props.location.search).mls;
     console.log(mls);
     return (
       <div style={{ height: '95vw', maxHeight: '1100px' }}>
