@@ -2,16 +2,14 @@ import React, { Component } from 'react';
 
 class Listing extends Component {
   render() {
-    const parseQueryString = input =>
-      input
-        .slice(input.indexOf('?') + 1)
-        .match(/[\w\d%\-!.~'()\*]+=[\w\d%\-!.~'()\*]+/g)
-        .map(s => s.split('=').map(decodeURIComponent))
-        .reduce(
-          (obj, [key, value]) => Object.assign(obj, { [key]: value }),
-          {}
-        );
+    const parseQueryString = i =>
+      Array.from(new URLSearchParams(i).entries()).reduce(
+        (c, p) => ((c[p[0]] = p[1]), c),
+        {}
+      );
+
     const mls = parseQueryString(this.props.location.search).mls;
+    console.log(mls);
     return (
       <div style={{ height: '95vw', maxHeight: '1100px' }}>
         <iframe
