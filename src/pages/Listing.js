@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 class Listing extends Component {
   render() {
-    const mls = this.props.location.search.slice(5, -1);
+    const query = this.props.location.search;
+    const mls = query.slice(5, -1) + query.charAt(query.length - 1);
     console.log(mls);
     return (
       <div style={{ height: '95vw', maxHeight: '1100px' }}>
