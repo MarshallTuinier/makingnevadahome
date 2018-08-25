@@ -28,8 +28,7 @@
     "typeface-open-sans": "^0.0.35",
     "typeface-varela-round": "^0.0.35",
     "typography": "^0.16.6",
-    "typography-theme-lincoln": "^0.15.11",
-    "yarn": "^1.7.0"
+    "typography-theme-lincoln": "^0.15.11"
   },
   "keywords": [
     "gatsby"
