@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import styled from "styled-components";
 
 export default class Contact extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class Contact extends Component {
           We'd love to hear from you! If you're interested in any of our
           properties or just would like to talk, feel free to give us a call, or
           submit a request below using the form below, and we will be in touch
-          as soon as possible.
+          as soon as possible!
         </p>
         <form
           name="Contact"
@@ -27,25 +27,29 @@ export default class Contact extends Component {
           </p>
           <p>
             <label>
-              Your Name:<br />
+              Your Name:
+              <br />
               <input type="text" name="name" placeholder="Name" />
             </label>
           </p>
           <p>
             <label>
-              Your Email:<br />
+              Your Email:
+              <br />
               <input type="email" name="email" placeholder="Email" />
             </label>
           </p>
           <p>
             <label>
-              Your Phone Number:<br />
+              Your Phone Number:
+              <br />
               <input type="text" name="phone" placeholder="Phone Number" />
             </label>
           </p>
           <p>
             <label>
-              Message:<br />
+              Message:
+              <br />
               <textarea name="message" />
             </label>
           </p>
