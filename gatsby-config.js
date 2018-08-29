@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Making Nevada Home`
+    title: `Making Nevada Home`,
+    plugins: [`gatsby-plugin-styled-components`]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
