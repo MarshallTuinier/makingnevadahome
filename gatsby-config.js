@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Making Nevada Home`,
-    plugins: [`gatsby-plugin-styled-components`]
+    title: `Making Nevada Home`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,6 +17,7 @@ module.exports = {
         // Avoids sending pageview hits from custom paths
         exclude: ["/preview/**", "/do-not-track/me/too/"]
       }
-    }
+    },
+    "gatsby-plugin-styled-components"
   ]
 };
