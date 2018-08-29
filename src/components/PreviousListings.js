@@ -1,12 +1,7 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import PropertyCard from './PropertyCard';
-import Slider from 'react-slick';
-import goldenSedrum from '../assets/goldenSedrum.jpg';
-import blancoCaballo from '../assets/BlancoCaballo.jpg';
-import bumblebee from '../assets/bumblebee.jpg';
-import greenValley from '../assets/greenValley.jpg';
-import linen from '../assets/linen.png';
+import React, { Component } from "react";
+import styled from "styled-components";
+import PropertyCard from "./PropertyCard";
+import Slider from "react-slick";
 
 class PreviousListings extends Component {
   constructor(props) {
@@ -15,40 +10,44 @@ class PreviousListings extends Component {
   render() {
     const propertyArray = [
       {
-        address: '736 Golden Sedum Drive, Henderson, NV 89011',
-        name: 'goldenSedrum',
-        photo: goldenSedrum,
-        price: '$325,000',
-        length: '',
-        beds: '4',
-        baths: '3'
+        address: "736 Golden Sedum Drive, Henderson, NV 89011",
+        name: "goldenSedrum",
+        photo:
+          "https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568852/makingnevadahome/goldenSedrum.jpg",
+        price: "$325,000",
+        length: "",
+        beds: "4",
+        baths: "3"
       },
       {
-        address: '4661 Bumblebee Circle, Las Vegas, NV 89122',
-        name: 'bumblebee',
-        photo: bumblebee,
-        price: '$190,000',
-        length: '',
-        beds: '2',
-        baths: '2'
+        address: "4661 Bumblebee Circle, Las Vegas, NV 89122",
+        name: "bumblebee",
+        photo:
+          "https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568850/makingnevadahome/Bumblebee.jpg",
+        price: "$190,000",
+        length: "",
+        beds: "2",
+        baths: "2"
       },
       {
-        address: '251 S. Green Valley Parkway #611, Henderson, NV 89012',
-        name: 'greenValley',
-        photo: greenValley,
-        price: '$250,000',
-        length: '',
-        beds: '2',
-        baths: '2.5'
+        address: "251 S. Green Valley Parkway #611, Henderson, NV 89012",
+        name: "greenValley",
+        photo:
+          "https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568852/makingnevadahome/GreenValley.jpg",
+        price: "$250,000",
+        length: "",
+        beds: "2",
+        baths: "2.5"
       },
       {
-        address: '913 Blanco Caballo Way, Henderson, NV 89015',
-        name: 'blancoCaballo',
-        photo: blancoCaballo,
-        price: '$265,000',
-        length: '',
-        beds: '4',
-        baths: '2'
+        address: "913 Blanco Caballo Way, Henderson, NV 89015",
+        name: "blancoCaballo",
+        photo:
+          "https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568848/makingnevadahome/BlancoCaballo.jpg",
+        price: "$265,000",
+        length: "",
+        beds: "4",
+        baths: "2"
       }
     ];
     const settings = {
@@ -91,7 +90,7 @@ const StyledContainer = styled.div`
   height: 100%;
   min-height: 350px;
   background-color: #20ace1;
-  background-image: url(${linen});
+  background-image: url('https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568847/makingnevadahome/linen.png');
   color: white;
   text-align: center;
   text-shadow: 1px 1px 2px black;

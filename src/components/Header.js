@@ -1,11 +1,9 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import Link from 'gatsby-link';
-import ContactCard from '../components/ContactCard';
-import ContactBlock from '../components/ContactBlock';
-import { Icon } from 'react-fa';
-import diamond from '../assets/diamond-upholstery.png';
-import CRRealty from '../assets/CRRealty.png';
+import React, { Component } from "react";
+import styled from "styled-components";
+import Link from "gatsby-link";
+import ContactCard from "../components/ContactCard";
+import ContactBlock from "../components/ContactBlock";
+import { Icon } from "react-fa";
 
 class Header extends Component {
   constructor(props) {
@@ -43,15 +41,15 @@ class Header extends Component {
           <div className="header-container">
             <div className="header-left">
               <div className="logo">
-                <img src={CRRealty} />
+                <img src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568850/makingnevadahome/CRRealty.png" />
               </div>
               <div className="header-content">
                 <h1>
                   <Link className="link" to="/">
                     <span onClick={this.handleHomeClick}>
-                      <span className="blue">making</span>NEVADA<span className="blue">
-                        home
-                      </span>
+                      <span className="blue">making</span>
+                      NEVADA
+                      <span className="blue">home</span>
                     </span>
                   </Link>
                 </h1>
@@ -108,7 +106,7 @@ class Header extends Component {
 const NavBar = styled.nav`
   width: 100%;
   background: #20ace1;
-  background-image: url(${diamond});
+  background-image: url("https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568850/makingnevadahome/diamond-upholstery.png");
   text-shadow: 1px 1px 2px black;
   .blue {
     color: #003153;
@@ -282,8 +280,8 @@ const StyledNavContainer = styled.div`
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    display: ${props => (props.open ? 'block' : 'none')};
-    opacity: ${props => (props.open ? '1' : '0')};
+    display: ${props => (props.open ? "block" : "none")};
+    opacity: ${props => (props.open ? "1" : "0")};
     transition: all 0.2s ease-out;
     margin: 2px auto;
     p {

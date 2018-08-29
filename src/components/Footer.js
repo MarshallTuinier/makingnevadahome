@@ -1,9 +1,7 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import styled from 'styled-components';
-import realtorlogos from '../assets/realtorlogos.png';
-import SocialButtons from './SocialButtons';
-import diamond from '../assets/diamond-upholstery.png';
+import React from "react";
+import Link from "gatsby-link";
+import styled from "styled-components";
+import SocialButtons from "./SocialButtons";
 
 const Footer = () => {
   return (
@@ -37,7 +35,11 @@ const Footer = () => {
           </Link>
         </div>
         <div className="logos">
-          <img src={realtorlogos} alt="Realtor, MLS, EOH logos" height="80" />
+          <img
+            src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568847/makingnevadahome/realtorlogos.png"
+            alt="Realtor, MLS, EOH logos"
+            height="80"
+          />
         </div>
       </div>
     </StyledFooter>
@@ -49,7 +51,7 @@ const Footer = () => {
 const StyledFooter = styled.div`
   width: 100%;
   background-color: #7c7c7c;
-  background-image: url(${diamond});
+  background-image: url("https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568850/makingnevadahome/diamond-upholstery.png");
   height: 100%;
   min-height: 150px;
   color: white;

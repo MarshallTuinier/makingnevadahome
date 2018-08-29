@@ -1,15 +1,14 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import styled from 'styled-components';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import 'typeface-varela-round';
-import 'typeface-open-sans';
-import 'typeface-league-script';
-import './index.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import favicon from '../assets/favicon.png';
+import React from "react";
+import Helmet from "react-helmet";
+import styled from "styled-components";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import "typeface-varela-round";
+import "typeface-open-sans";
+import "typeface-league-script";
+import "./index.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 class TemplateWrapper extends React.Component {
   render() {
@@ -19,17 +18,22 @@ class TemplateWrapper extends React.Component {
           title="Making Nevada Home"
           meta={[
             {
-              name: 'Making Nevada Home',
-              content: 'Number 1 in Las Vegas Valley Real Estate'
+              name: "Making Nevada Home",
+              content: "Number 1 in Las Vegas Valley Real Estate"
             },
             {
-              name: 'keywords',
+              name: "keywords",
               content:
-                'Making Nevada Home, Las Vegas, Vegas, Henderson, Southern Neava, Real Estate, Home, Home Buying, Real, Estate'
+                "Making Nevada Home, Las Vegas, Vegas, Henderson, Southern Neava, Real Estate, Home, Home Buying, Real, Estate"
             }
           ]}
           link={[
-            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+            {
+              rel: "shortcut icon",
+              type: "image/png",
+              href:
+                "https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568850/makingnevadahome/favicon.png"
+            }
           ]}
         />
         <Header />

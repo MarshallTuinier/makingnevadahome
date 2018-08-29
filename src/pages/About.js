@@ -1,9 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import JBAbout from '../assets/JBAbout.png';
-import DHAbout from '../assets/DHAbout.png';
-import UnderNavImg from '../components/UnderNavImg';
-import HR from '../components/HR';
+import React from "react";
+import styled from "styled-components";
+import UnderNavImg from "../components/UnderNavImg";
+import HR from "../components/HR";
 const About = props => {
   return (
     <div className={props.className}>
@@ -12,7 +10,10 @@ const About = props => {
         <h1>About</h1>
         <HR />
         <BioContainer>
-          <img src={JBAbout} alt="Jason Brown Realtor" />
+          <img
+            src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568852/makingnevadahome/JBAbout.png"
+            alt="Jason Brown Realtor"
+          />
           <h2>Jason Brown</h2>
           <p>
             Jason Brown brings integrity, energy, hard work and dedication into
@@ -31,7 +32,10 @@ const About = props => {
         </BioContainer>
         <HR />
         <BioContainer>
-          <img src={DHAbout} alt="David Hofer Realtor" />
+          <img
+            src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568850/makingnevadahome/DHAbout.png"
+            alt="David Hofer Realtor"
+          />
           <h2>David Hofer</h2>
           <p>
             My name is David Hofer and I have been a real estate appraiser for
@@ -42,9 +46,8 @@ const About = props => {
             keep my knowledge of the market and skills sharp to benefit my Buyer
             and Seller clients.
             <br />
-            <br />
-            I work for you. I am here to help you find a home you love or an
-            investment property to generate revenue and will do what I can to
+            <br />I work for you. I am here to help you find a home you love or
+            an investment property to generate revenue and will do what I can to
             help you get it. I will help you every step of the way and guide you
             through the process which is what you should expect from your
             Realtor.

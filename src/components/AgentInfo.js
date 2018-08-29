@@ -1,13 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import DavidHofer from '../assets/DavidHofer.png';
-import JasonBrown from '../assets/JasonBrown.png';
+import React from "react";
+import styled from "styled-components";
 
 const AgentInfo = () => {
   return (
     <StyledContainer>
       <div className="agent-bar">
-        <img className="agent-photo jason" src={JasonBrown} />
+        <img
+          className="agent-photo jason"
+          src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568852/makingnevadahome/JasonBrown.png"
+        />
         <div className="description">
           <h2>Las Vegas Valley Real Estate</h2>
           <p>
@@ -25,7 +26,10 @@ const AgentInfo = () => {
             situation.
           </p>
         </div>
-        <img className="agent-photo david" src={DavidHofer} />
+        <img
+          className="agent-photo david"
+          src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568850/makingnevadahome/DavidHofer.png"
+        />
       </div>
     </StyledContainer>
   );

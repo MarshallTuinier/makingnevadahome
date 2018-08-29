@@ -1,8 +1,7 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
+import styled from "styled-components";
 
 const ImageCarousel = props => (
   <StyledContainer>
@@ -16,11 +15,11 @@ const ImageCarousel = props => (
       showIndicators={false}
       transitionTime={2000}
     >
-      <Img sizes={props.data.sliderImg5.sizes} />
-      <Img sizes={props.data.sliderImg2.sizes} />
-      <Img sizes={props.data.sliderImg3.sizes} />
-      <Img sizes={props.data.sliderImg4.sizes} />
-      <Img sizes={props.data.sliderImg1.sizes} />
+      <img src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568848/makingnevadahome/sliderImg5.jpg" />
+      <img src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568848/makingnevadahome/sliderImg1.jpg" />
+      <img src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568848/makingnevadahome/sliderImg3.jpg" />
+      <img src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568848/makingnevadahome/sliderImg4.jpg" />
+      <img src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568848/makingnevadahome/sliderImg2.jpg" />
     </Carousel>
   </StyledContainer>
 );

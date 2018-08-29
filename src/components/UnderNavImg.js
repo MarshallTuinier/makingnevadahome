@@ -1,10 +1,9 @@
-import React from 'react';
-import underNavImg from '../assets/underNavImg.jpg';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const UnderNavImg = () => (
   <StyledImgContainer>
-    <HeaderImg src={underNavImg} />
+    <HeaderImg src="https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568848/makingnevadahome/underNavImg.jpg" />
   </StyledImgContainer>
 );
 

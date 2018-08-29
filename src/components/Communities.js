@@ -1,18 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
-import communitiesImg from '../assets/communitiesImg.jpg';
-import CommunityButton from './CommunityButton';
-import linen from '../assets/linen.png';
+import React from "react";
+import styled from "styled-components";
+import CommunityButton from "./CommunityButton";
 
 const Communities = () => {
   const communityList = [
-    'HENDERSON',
-    'SUMMERLIN',
-    'SOUTH WEST',
-    'LAS VEGAS',
-    'BOULDER CITY',
-    'NORTH LAS VEGAS',
-    'NORTH WEST'
+    "HENDERSON",
+    "SUMMERLIN",
+    "SOUTH WEST",
+    "LAS VEGAS",
+    "BOULDER CITY",
+    "NORTH LAS VEGAS",
+    "NORTH WEST"
   ];
   return (
     <StyledContainer>
@@ -34,7 +32,7 @@ const StyledContainer = styled.div`
   color: white;
   text-align: center;
   background-color: #003153;
-  background-image: url(${linen});
+  background-image: url("https://res.cloudinary.com/dgt29ucc1/image/upload/v1535568847/makingnevadahome/linen.png");
   text-shadow: 1px 1px 2px black;
   @media (max-width: 920px) {
     height: 100%;
