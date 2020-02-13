@@ -15,7 +15,9 @@ const Header = () => {
         <nav>
           <div className="logoContainer">
             <Link className="mnh" to="/">
-              making<span className="uppercase">nevada</span>home
+              making
+              <span className="uppercase">nevada</span>
+              home
             </Link>
             <Link to="/">
               <Logo
@@ -24,21 +26,6 @@ const Header = () => {
               />
             </Link>
           </div>
-          <button aria-label="Open Mobile Menu" onClick={handleClick}>
-            <Bar1 sidebarVisible={sidebarVisible} />
-            <Bar2 sidebarVisible={sidebarVisible} />
-            <Bar3 sidebarVisible={sidebarVisible} />
-          </button>
-          <div className="overlay" aria-hidden onClick={handleClick} />
-          <ul>
-            <Link className="mobileOnly" to="/">
-              Home
-            </Link>
-            <Link to="/about">About</Link>
-            <Link to="/currentListings">Current Listings</Link>
-            <Link to="/homeSearch">Home Search</Link>
-            <Link to="/contactUs">Contact</Link>
-          </ul>
         </nav>
       </div>
     </StyledHeader>
@@ -172,11 +159,11 @@ const Bar1 = styled(Bar)`
     `
       -webkit-transform: rotate(-45deg) translate(-9px, 6px);
       transform: rotate(-45deg) translate(-9px, 6px);
-    `}
+    `};
 `
 
 const Bar2 = styled(Bar)`
-  ${({ sidebarVisible }) => sidebarVisible && `opacity: 0;`}
+  ${({ sidebarVisible }) => sidebarVisible && `opacity: 0;`};
 `
 
 const Bar3 = styled(Bar)`
@@ -185,7 +172,7 @@ const Bar3 = styled(Bar)`
     `
       -webkit-transform: rotate(45deg) translate(-8px, -8px);
       transform: rotate(45deg) translate(-8px, -8px);
-    `}
+    `};
 `
 
 export default Header

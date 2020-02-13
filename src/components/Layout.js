@@ -35,7 +35,6 @@ export default class Page extends Component {
           <Header />
           <div className="fancy inner" />
           <main>{this.props.children}</main>
-          <Footer />
         </StyledPage>
       </ThemeProvider>
     )
